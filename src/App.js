@@ -1,10 +1,16 @@
 import React from 'react';
+import '../src/App.css';
+import { BrowserRouter } from 'react-router-dom';
+import Routes from './routes/Routes';
+import Provider from './context/Provider.js';
 
 function App() {
   return (
-    <div>
-      Portfolio Web Mariana Saraiva
-    </div>
+    <BrowserRouter>
+      <Provider>
+        <Routes />
+      </Provider>
+    </BrowserRouter>
   );
 }
 
