@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Header.css';
+// import './Header.css';
+import HeaderStyle from './styles.js';
 
 function Header() {
   return (
-    <div className='header-container'>
+    <HeaderStyle>
       <Link to={'/'}>
         <p>About</p>
       </Link>
@@ -14,7 +15,7 @@ function Header() {
       <Link to={'/contact'}>
         <p>Contact</p>
       </Link>
-    </div>
+    </HeaderStyle>
   );
 }
 
