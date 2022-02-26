@@ -1,20 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import './Header.css';
-import HeaderStyle from './styles.js';
+import { HeaderStyle, HeaderStyleP } from './styles.js';
 
 function Header() {
   return (
     <HeaderStyle>
-      <Link to={'/'}>
-        <p>About</p>
-      </Link>
-      <Link to={'/projects'}>
-        <p>Projects</p>
-      </Link>
-      <Link to={'/contact'}>
-        <p>Contact</p>
-      </Link>
+      <Link to={'/'}>Mariana Saraiva</Link>
+      <HeaderStyleP>
+        <Link to={'/projects'}>Projects</Link>
+        <Link to={'/contact'}>Contact</Link>
+      </HeaderStyleP>
     </HeaderStyle>
   );
 }
