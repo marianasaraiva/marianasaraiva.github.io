@@ -10,6 +10,8 @@ import SolarSistem from '../images/solarSistem.png';
 import Trivia from '../images/trivia.png';
 import AppRecipe from '../images/appRecipe.png';
 
+import TrybeWallet from '../images/trybeWallet.png';
+
 
 function Projects() {
   const array = ['HTML', 'CSS', 'JavaScript', 'GitHub', 'Jest', 'React', 'Redux', 'Docker', 'MySQL'];
@@ -22,7 +24,6 @@ function Projects() {
           {array.map((tech) => (
             <li>
               {tech}
-              {/* <img src={icon} alt="icon HTML"/> */}
             </li>
           ))}
         </ul>
@@ -62,11 +63,20 @@ function Projects() {
             <img class="w-80 h-70 shadow-lg" src={ SolarSistem } alt="Project SolarSistem "/>
           </CardImageProject>
           <CardImageProject>
+            <h3>Projeto Trybe Wallet</h3>
+            <p>Projeto individual</p>
+            <p>React, Redux</p>
+            <img class="w-80 h-70 shadow-lg" src={ TrybeWallet } alt="Project TrybeWallet "/>
+          </CardImageProject>
+          <CardImageProject>
             <h3>Projeto Perguntas e Respostas</h3>
             <p>Projeto em grupo</p>
             <p>React, Redux</p>
             <img class="w-80 h-70 shadow-lg" src={ Trivia } alt="Project Trivia"/>
           </CardImageProject>
+        </FlexCenter>
+
+        <FlexCenter>
           <CardImageProject>
             <h3>Projeto App Recipe</h3>
             <p>Projeto em grupo</p>
