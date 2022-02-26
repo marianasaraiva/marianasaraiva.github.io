@@ -1,43 +1,36 @@
 import React from 'react';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
+import { AboutStyle, NameStyle} from './styles.js';
+import perfil from '../images/perfil.jpeg';
+// import folder from '../images/folder.JPG';
 
 function About() {
   return (
     <div>
       <Header />
-      <h2>About me</h2>
-      <p>
-        I'm shy and talk a lot, it seems contradictory but it's exactly like that.
-      </p>
-      <p>
-        With these characteristics I worked for years in the hospital area, learning to have resilience, a sense of urgency and to work as a team.
-      </p>
-      <p>
-        And it was when I needed to transform the paper records to the system that I found myself in love with Technology.
-      </p>
-      <p>
-        The teenager who had taken the entrance exam for computational mathematics came along and took care of me.
-      </p>
-      <p>
-        Today I am a student of Web Development at Trybe.
-      </p>
-
-      <h2>Technology and Tools</h2>
-      <p>
-        Colocar HTML, CSS, JavaScript, GitHub, React, Redux, Docker, MySQL, 
-      </p>
-
-      <h2>Projects</h2>
-      <p>
-        Colocar button para selecionar o projeto
-        Colocar um texto sobre os projetos e selecionar 6 projetos par vincular. 
-      </p>
-
-      <h2>Find me here</h2>
-      <p>
-        I invite you to see my projects here:
-        Colocar LinkedIn, GitHub, Codewars
-      </p>
+      <NameStyle>
+        <h1 class="mb-10">Mariana Saraiva</h1>
+        <p>Software Developer | Trybe</p>
+        <button
+          class="border-solid border-2 bg-rose-700 text-white mt-10 p-2 rounded-lg"
+          type="button"
+        >
+          Find out more
+        </button>
+      </NameStyle>
+      <AboutStyle>
+        <img class="h-30 w-30 rounded-full m-10" src={ perfil } alt="Foto de Perfil"/>
+        <div class="shadow-lg bg-white p-8 m-10 rounded-lg">
+          <h2 class="text-3xl pb-10 ">About me</h2>
+          <div class="shadow-lg ">
+            <p>
+              I'm shy and talk a lot, it seems contradictory but it's exactly like that. With these characteristics I worked for years in the hospital area, learning to have resilience, a sense of urgency and to work as a team. And it was when I needed to transform the paper records to the system that I found myself in love with Technology. The teenager who had taken the entrance exam for computational mathematics came along and took care of me. Today I am a student of Web Development at Trybe.
+            </p>
+          </div>
+        </div>
+      </AboutStyle>
+      <Footer />
     </div>
 
   );
