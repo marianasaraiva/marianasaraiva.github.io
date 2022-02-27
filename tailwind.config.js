@@ -17,7 +17,6 @@ module.exports = {
       xl: '1440px',
     },
     backgroundImage: {
-      'folder': "url('/src/images/folder.JPG')",
       'folder1': "url('/src/images/folder1.jpg')",
       'folder2': "url('/src/images/folder2.jpg')",
       'folder3': "url('/src/images/folder3.jpg')",
@@ -27,6 +26,9 @@ module.exports = {
       serif: ['Merriweather', 'serif'],
     },
     extend: {
+      grayscale: {
+        40: '40%',
+      },
       spacing: {
         '128': '32rem',
         '144': '36rem',
