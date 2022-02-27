@@ -1,5 +1,4 @@
 import tw from "tailwind-styled-components";
-// import folder from '../images/folder.JPG';
 
 export const AboutStyle = tw.section`
   flex
@@ -8,7 +7,7 @@ export const AboutStyle = tw.section`
   flex-row
   text-center
   text-l
-  bg-rose-700
+  bg-rose-900
   w-full
   h-screen
   tracking-tight
@@ -20,15 +19,16 @@ export const NameStyle = tw.section`
   justify-center
   flex-col
   text-xl
+  font-semibold
   bg-folder2
-  bg-center
-  bg-no-repeat
+  bg-left-top
+  grayscale-40
   bg-cover
   w-full
-  text-white
   h-screen
   tracking-tight
   leading-10
+  pt-16
 `;
 
 export const TechToolStyle = tw.section`
@@ -39,6 +39,9 @@ export const TechToolStyle = tw.section`
   text-xl
   flex-col
   bg-folder2
+  bg-left-top
+  grayscale-40
+  bg-cover
   w-full
   h-screen
   tracking-tight
@@ -52,30 +55,31 @@ export const ProjectStyle = tw.section`
   justify-center
   text-center
   py-10
-  bg-rose-50
 `;
 
 export const FlexCenter = tw.div`
   flex
   flex-row
+  flex-wrap
   items-center
   justify-evenly
   w-full
-  pt-10
 `;
 
 export const CardImageProject = tw.div`
   flex
   flex-col
   items-center
-  justify-center
-  text-rose-50
-  bg-rose-700
+  justify-evenly
+  box-border
   rounded-lg
-  box-content
-  h-64
-  w-64
-  p-4
+  h-72
+  w-96
+  shadow-lg
 `;
 
+export const ImageProjects = tw.img`
 
+  w-full
+  border
+`;
