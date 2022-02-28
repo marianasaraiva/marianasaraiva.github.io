@@ -8,7 +8,7 @@ import TrybeWallet from '../images/trybeWallet.png';
 
 export const dataProjects = [
   {
-    name: 'Pixel Artes',
+    name: 'Pixel Arts',
     image: Pixel,
     colaborate: [],
     tecnologies: [ 'HTML', 'CSS' ],
@@ -26,7 +26,7 @@ export const dataProjects = [
     tecnologies: [ 'HTML', 'CSS' ],
   },
   {
-    name: 'Solar Sistem',
+    name: 'Solar System',
     image: SolarSistem,
     colaborate: [],
     tecnologies: [ 'React' ],
