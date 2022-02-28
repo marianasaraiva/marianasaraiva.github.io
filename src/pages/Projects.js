@@ -5,7 +5,8 @@ import { ProjectStyle, TechToolStyle, CardImageProject, FlexCenter, ImageProject
 import { dataProjects } from '../services/dataProjects.js';
 
 function Projects() {
-  const [ inputState, setInputState ] = useState('');
+  const [inputState, setInputState] = useState('');
+  const [search, setSearch] = useState('');
   const array = ['HTML', 'CSS', 'JavaScript', 'GitHub', 'Jest', 'React', 'Redux', 'Docker', 'MySQL'];
   return (
     <div>
@@ -29,9 +30,15 @@ function Projects() {
           type="text"
           onChange={ ({ target }) => setInputState(target.value) } 
         />
+        <button
+          type="button"
+          onClick={() => setSearch(inputState) }
+        >
+          Search
+        </button>
         
         {
-          inputState.length === 0 ?
+          search.length === 0 ?
             <FlexCenter>
             {
               dataProjects.map((project) => (
@@ -42,7 +49,17 @@ function Projects() {
               ))
             }
           </FlexCenter>
-          : null
+          : 
+          <FlexCenter>
+            {
+              dataProjects.filter((project, index) => project.name.includes(search))
+                .map((proj) => (
+                  <CardImageProject>
+                    <ImageProjects src={proj.image} alt={proj.name} />
+                    <h3>{proj.name}</h3>
+                  </CardImageProject>
+            ))}
+          </FlexCenter>
         }
         
       </ProjectStyle>
