@@ -8,6 +8,8 @@ function Projects() {
   const [inputState, setInputState] = useState('');
   const [search, setSearch] = useState('');
   const array = ['HTML', 'CSS', 'JavaScript', 'GitHub', 'Jest', 'React', 'Redux', 'Docker', 'MySQL'];
+  // const tecnologies = dataProjects.map((tech) => tech.tecnologies)
+  // .filter((technology, index) => technology[index].includes(search));
   return (
     <div>
       <Header />
@@ -24,18 +26,23 @@ function Projects() {
 
       <ProjectStyle>
         <h2 class="mb-10 text-2xl text-rose-700">Projects</h2>
-        <input
-          class="border-2 text-center"
-          placeholder="Search for tecnologies"
-          type="text"
-          onChange={ ({ target }) => setInputState(target.value) } 
-        />
-        <button
-          type="button"
-          onClick={() => setSearch(inputState) }
-        >
-          Search
-        </button>
+        <p>
+          Projects completed using the technologies learned during the FullStack Developer training.</p>
+        <div class="flex items-center w-2/4 justify-evenly">
+          <input
+            class="border-2 text-center py-2"
+            placeholder="Search for name"
+            type="text"
+            onChange={ ({ target }) => setInputState(target.value) } 
+          />
+          <button
+            class="border-2 px-16 py-2 my-4 bg-rose-900 text-white"
+            type="button"
+            onClick={() => setSearch(inputState) }
+          >
+            Search
+          </button>
+        </div>
         
         {
           search.length === 0 ?
@@ -52,7 +59,7 @@ function Projects() {
           : 
           <FlexCenter>
             {
-              dataProjects.filter((project, index) => project.name.includes(search))
+              dataProjects.filter((project) => project.name.includes(search))
                 .map((proj) => (
                   <CardImageProject>
                     <ImageProjects src={proj.image} alt={proj.name} />
