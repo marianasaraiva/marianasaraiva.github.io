@@ -4,7 +4,7 @@ import { FooterStyled } from './styles.js';
 function Footer() {
   return (
     <FooterStyled>
-        <p>Create for Mariana Saraiva | 2022</p>
+        <p>© Todos os Diretos Reservados - Mariana Saraiva </p>
     </FooterStyled>
   );
 }
