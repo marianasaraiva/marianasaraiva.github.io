@@ -64,7 +64,7 @@ function Projects() {
             :
             <FlexCenter>
               {
-                dataProjects.filter((project) => project.name.includes(search) || project.tecnologies[0].includes(search))
+                dataProjects.filter((project) => project.name.includes(search) || project.tecnologies.includes(search))
                   .map((proj) => (
                     <CardImageProject>
                       <ImageProjects src={proj.image} alt={proj.name} />
