@@ -7,7 +7,7 @@ export const AboutStyle = tw.section`
   flex-row
   text-center
   text-l
-  bg-rose-900
+  bg-white
   w-full
   h-screen
   tracking-tight
@@ -45,7 +45,6 @@ export const TechToolStyle = tw.section`
   w-full
   h-screen
   tracking-tight
-  pt-10
 `;
 
 export const ProjectStyle = tw.section`
@@ -79,7 +78,47 @@ export const CardImageProject = tw.div`
 `;
 
 export const ImageProjects = tw.img`
-
   w-full
   border
+`;
+
+export const ContactStyle = tw.div`
+  flex
+  items-center
+  justify-center
+  flex-col
+  bg-folder2
+  bg-left-top
+  grayscale-40
+  bg-cover
+  h-screen
+  text-white
+`;
+
+export const SectionStyle = tw.div`
+  flex
+  items-center
+  justify-center
+  flex-col
+  bg-black
+  w-2/3
+  rounded-lg
+`;
+
+export const LocationStyle = tw.div`
+  flex
+  items-start
+  justify-center
+  pb-4
+`;
+
+export const LocationItemStyle = tw.div`
+  flex
+  items-center
+  justify-center
+  flex-col
+  text-white
+  px-10
+  m-4
+  rounded-lg
 `;
