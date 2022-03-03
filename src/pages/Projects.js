@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import { ProjectStyle, TechToolStyle, CardImageProject, FlexCenter, ImageProjects } from './styles.js';
@@ -19,6 +19,7 @@ function Projects() {
           {array.map((tech, i) => (
             <button
               type="button"
+              className="hover:opacity-80"
               onClick={() => setSearch(tech)}
             >
               <li class="flex w-16 items-center justify-evenly bg-rose-900 rounded-lg text-white px-16 py-2 m-4">
@@ -36,12 +37,12 @@ function Projects() {
         <div class="flex items-center w-2/4 justify-evenly">
           <input
             class="border-2 text-center py-2 rounded-lg"
-            placeholder="Search for name"
+            placeholder="Search for name or technology"
             type="text"
             onChange={({ target }) => setInputState(target.value)}
           />
           <button
-            class="border-2 px-16 py-2 my-4 bg-rose-900 text-white rounded-lg"
+            class="border-2 px-16 py-2 my-4 bg-rose-900 text-white rounded-lg hover:bg-green-900"
             type="button"
             onClick={() => setSearch(inputState)}
           >
@@ -54,10 +55,15 @@ function Projects() {
             <FlexCenter>
               {
                 dataProjects.map((project) => (
-                  <CardImageProject>
-                    <ImageProjects src={project.image} alt={project.name} />
-                    <h3>{project.name}</h3>
-                  </CardImageProject>
+                  <Link to={{ pathname: `${project.url}` }} target="_blank">
+                    <CardImageProject
+                      className="hover:opacity-60"
+                      type="button"
+                    >
+                      <ImageProjects src={project.image} alt={project.name} />
+                      <h3>{project.name}</h3>
+                    </CardImageProject>
+                  </Link>
                 ))
               }
             </FlexCenter>
@@ -66,10 +72,15 @@ function Projects() {
               {
                 dataProjects.filter((project) => project.name.includes(search) || project.tecnologies.includes(search))
                   .map((proj) => (
-                    <CardImageProject>
-                      <ImageProjects src={proj.image} alt={proj.name} />
-                      <h3>{proj.name}</h3>
-                    </CardImageProject>
+                    <Link to={{ pathname: `${proj.url}` }} target="_blank">
+                      <CardImageProject
+                        className="hover:opacity-60"
+                        type="button"
+                      >
+                        <ImageProjects src={proj.image} alt={proj.name} />
+                        <h3>{proj.name}</h3>
+                      </CardImageProject>
+                    </Link>
                   ))}
             </FlexCenter>
         }

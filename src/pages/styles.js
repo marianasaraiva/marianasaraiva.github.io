@@ -65,7 +65,7 @@ export const FlexCenter = tw.div`
   w-full
 `;
 
-export const CardImageProject = tw.div`
+export const CardImageProject = tw.button`
   flex
   flex-col
   items-center
