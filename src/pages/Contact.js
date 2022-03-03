@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import { ContactStyle, SectionStyle, LocationStyle, LocationItemStyle } from './styles.js';
+import Github from '../images/icon-github.png';
+import Linkedin from '../images/icon-linkedin.png';
 
 function Contact() {
   return (
@@ -14,9 +16,13 @@ function Contact() {
           <p className="text-lg font-semibold">
             Where can you get in touch
           </p>
-          <div className="p-4 text-rose-900 text-2xl flex items-center w-3/4 justify-evenly m-10 rounded-lg">
-            <Link className="hover:text-green-700" to={{ pathname: "https://github.com/marianasaraiva" }} target="_blank">GitHub</Link>
-            <Link className="hover:text-green-700" to={{ pathname: "https://www.linkedin.com/in/marianascmoura/" }} target="_blank">LinkedIn</Link>
+          <div className="p-4 flex items-center w-3/4 justify-evenly m-10 rounded-lg">
+            <Link className="bg-white hover:bg-rose-900 rounded-full" to={{ pathname: "https://github.com/marianasaraiva" }} target="_blank">
+              <img  clasName="text-rose-900" width="60" src={ Github } alt="icone do github"/> 
+            </Link>
+            <Link className="bg-white hover:bg-rose-900 rounded-full" to={{ pathname: "https://www.linkedin.com/in/marianascmoura/" }} target="_blank">
+              <img  width="60" src={ Linkedin } alt="icone do linkedin"/>
+            </Link>
           </div>
           
           <LocationStyle>
