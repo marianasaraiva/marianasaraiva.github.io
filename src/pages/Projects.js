@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import { dataProjects, dataTechnologies } from '../services/dataProjects.js';
 import { 
-  TechToolStyle,
+  BackgroundImageStyle,
   TechContainer,
   Title,
   CardTech,
@@ -23,7 +23,7 @@ function Projects() {
   return (
     <div>
       <Header />
-      <TechToolStyle>
+      <BackgroundImageStyle>
         <TechContainer>
           <Title>Technology and Tools</Title>
           <FlexCenter>
@@ -44,7 +44,7 @@ function Projects() {
             ))}
           </FlexCenter>
         </TechContainer>
-      </TechToolStyle>
+      </BackgroundImageStyle>
 
       <ProjectStyle>
         <Title>Projects</Title>
