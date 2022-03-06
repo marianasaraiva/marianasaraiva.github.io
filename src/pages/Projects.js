@@ -2,36 +2,49 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
-import { ProjectStyle, TechToolStyle, CardImageProject, FlexCenter, ImageProjects } from './styles.js';
-import { dataProjects } from '../services/dataProjects.js';
+import { dataProjects, dataTechnologies } from '../services/dataProjects.js';
+import { 
+  ProjectStyle,
+  TechToolStyle,
+  TechContainer,
+  Title,
+  CardTech,
+  CardImageProject,
+  FlexCenter,
+  ImageProjects } from './styles.js';
 
 function Projects() {
   const [inputState, setInputState] = useState('');
   const [search, setSearch] = useState('');
-  const array = ['HTML', 'CSS', 'JavaScript', 'GitHub', 'Jest', 'React', 'Redux', 'Docker', 'MySQL'];
 
   return (
     <div>
       <Header />
       <TechToolStyle>
-        <ul class="size-l bg-rose-50 px-36 rounded-lg w-2/3 py-10">
-          <h2 class="pb-10 text-2xl font-semibold">Technology and Tools</h2>
-          {array.map((tech, i) => (
-            <button
-              type="button"
-              className="hover:opacity-80"
-              onClick={() => setSearch(tech)}
-            >
-              <li class="flex w-16 items-center justify-evenly bg-rose-900 rounded-lg text-white px-16 py-2 m-4">
-                {tech}
-              </li>
-            </button>
-          ))}
-        </ul>
+        <TechContainer>
+          <Title>Technology and Tools</Title>
+          <FlexCenter>
+            {dataTechnologies.map((tech, i) => (
+              <CardTech
+                type="button"
+                onClick={() => setSearch(tech.name)}
+              >
+                <img
+                  src={tech.image}
+                  alt={tech.name}
+                  width="100px"
+                />
+                <li>
+                  {tech.name}
+                </li>
+              </CardTech>
+            ))}
+          </FlexCenter>
+        </TechContainer>
       </TechToolStyle>
 
       <ProjectStyle>
-        <h2 class="mb-10 text-2xl text-rose-900 font-semibold">Projects</h2>
+        <Title>Projects</Title>
         <p>
           Projects completed using the technologies learned during the FullStack Developer training.</p>
         <div class="flex items-center w-2/4 justify-evenly">
@@ -78,6 +91,7 @@ function Projects() {
                         type="button"
                       >
                         <ImageProjects src={proj.image} alt={proj.name} />
+
                         <h3>{proj.name}</h3>
                       </CardImageProject>
                     </Link>
