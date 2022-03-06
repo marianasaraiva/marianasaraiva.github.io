@@ -47,6 +47,25 @@ export const TechToolStyle = tw.section`
   tracking-tight
 `;
 
+export const TechContainer = tw.ul`
+  px-36 bg-rose-50 rounded-lg w-2/3 py-10
+`;
+
+export const Title = tw.h2`
+mb-10 text-2xl text-rose-900 font-semibold
+`;
+
+export const CardTech = tw.button`
+  hover:grayscale-[90%]
+  flex
+  flex-col
+  items-center
+  justify-center
+  box-border
+  font-semibold
+  px-16 py-4 m-4
+`;
+
 export const ProjectStyle = tw.section`
   flex
   flex-col
