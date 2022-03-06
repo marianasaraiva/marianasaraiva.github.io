@@ -44,11 +44,10 @@ export const TechToolStyle = tw.section`
   bg-cover
   w-full
   h-screen
-  tracking-tight
 `;
 
 export const TechContainer = tw.ul`
-  px-36 bg-rose-50 rounded-lg w-2/3 py-10
+  bg-rose-50 rounded-lg w-3/5 py-6
 `;
 
 export const Title = tw.h2`
@@ -60,10 +59,10 @@ export const CardTech = tw.button`
   flex
   flex-col
   items-center
-  justify-center
+  justify-evelyn
   box-border
   font-semibold
-  px-16 py-4 m-4
+  w-1/4 m-2
 `;
 
 export const ProjectStyle = tw.section`
@@ -73,6 +72,32 @@ export const ProjectStyle = tw.section`
   justify-center
   text-center
   py-10
+`;
+
+export const ContainerInput = tw.div`
+  flex
+  items-center
+  w-2/4
+  justify-evenly
+`;
+
+export const InputSearch = tw.input`
+  border-2
+  text-center
+  py-2
+  px-16
+  rounded-lg
+`;
+
+export const ButtonSearch = tw.button`
+  border-2
+  px-16
+  py-2
+  my-4
+  bg-rose-900
+  text-white
+  rounded-lg
+  hover:bg-green-900
 `;
 
 export const FlexCenter = tw.div`
@@ -94,6 +119,7 @@ export const CardImageProject = tw.button`
   h-72
   w-96
   shadow-lg
+  hover:opacity-60
 `;
 
 export const ImageProjects = tw.img`

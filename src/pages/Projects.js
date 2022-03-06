@@ -4,13 +4,16 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import { dataProjects, dataTechnologies } from '../services/dataProjects.js';
 import { 
-  ProjectStyle,
   TechToolStyle,
   TechContainer,
   Title,
   CardTech,
-  CardImageProject,
+  ProjectStyle,
+  ContainerInput,
+  InputSearch,
+  ButtonSearch,
   FlexCenter,
+  CardImageProject,
   ImageProjects } from './styles.js';
 
 function Projects() {
@@ -32,7 +35,7 @@ function Projects() {
                 <img
                   src={tech.image}
                   alt={tech.name}
-                  width="100px"
+                  width="70px"
                 />
                 <li>
                   {tech.name}
@@ -47,21 +50,19 @@ function Projects() {
         <Title>Projects</Title>
         <p>
           Projects completed using the technologies learned during the FullStack Developer training.</p>
-        <div class="flex items-center w-2/4 justify-evenly">
-          <input
-            class="border-2 text-center py-2 rounded-lg"
+        <ContainerInput>
+          <InputSearch
             placeholder="Search for name or technology"
             type="text"
             onChange={({ target }) => setInputState(target.value)}
-          />
-          <button
-            class="border-2 px-16 py-2 my-4 bg-rose-900 text-white rounded-lg hover:bg-green-900"
+          ></InputSearch>
+          <ButtonSearch
             type="button"
             onClick={() => setSearch(inputState)}
           >
             Search
-          </button>
-        </div>
+          </ButtonSearch>
+        </ContainerInput>
 
         {
           search.length === 0 ?
@@ -70,7 +71,6 @@ function Projects() {
                 dataProjects.map((project) => (
                   <Link to={{ pathname: `${project.url}` }} target="_blank">
                     <CardImageProject
-                      className="hover:opacity-60"
                       type="button"
                     >
                       <ImageProjects src={project.image} alt={project.name} />
@@ -91,7 +91,6 @@ function Projects() {
                         type="button"
                       >
                         <ImageProjects src={proj.image} alt={proj.name} />
-
                         <h3>{proj.name}</h3>
                       </CardImageProject>
                     </Link>
