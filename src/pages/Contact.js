@@ -20,8 +20,8 @@ function Contact() {
       <Header />
       <BackgroundImageStyle>
         <SectionStyle>
-          <Title>Find me here</Title>
-          <StyleP>Where can you get in touch</StyleP>
+          <Title>Onde me encontrar?</Title>
+          <StyleP>Gostou? Conheça um pouco mais e vamos conversar.</StyleP>
 
           <ContainerContacts>
             <LocationItemStyle>

@@ -63,6 +63,10 @@ export const TitleAbout = tw.h2`
   font-semibold
 `;
 
+export const Span = tw.span`
+  text-4xl
+`;
+
 export const TechContainer = tw.ul`
   bg-rose-50
   rounded-lg
@@ -86,7 +90,7 @@ export const CardTech = tw.button`
   justify-evelyn
   box-border
   font-semibold
-  w-1/4 m-2
+  w-32 m-2
 `;
 
 export const ProjectStyle = tw.section`

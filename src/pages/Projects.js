@@ -25,9 +25,9 @@ function Projects() {
       <Header />
       <BackgroundImageStyle>
         <TechContainer>
-          <Title>Technology and Tools</Title>
+          <Title>Tecnologias e Ferramentas</Title>
           <FlexCenter>
-            {dataTechnologies.map((tech, i) => (
+            {dataTechnologies.map((tech) => (
               <CardTech
                 type="button"
                 onClick={() => setSearch(tech.name)}
@@ -47,12 +47,12 @@ function Projects() {
       </BackgroundImageStyle>
 
       <ProjectStyle>
-        <Title>Projects</Title>
+        <Title>Projetos</Title>
         <p>
-          Projects completed using the technologies learned during the FullStack Developer training.</p>
+        Projetos concluídos usando as tecnologias aprendidas durante o curso de Desenvolvimento Web.</p>
         <ContainerInput>
           <InputSearch
-            placeholder="Search for name or technology"
+            placeholder="Buscar por nome ou tecnologia"
             type="text"
             onChange={({ target }) => setInputState(target.value)}
           ></InputSearch>
@@ -60,7 +60,7 @@ function Projects() {
             type="button"
             onClick={() => setSearch(inputState)}
           >
-            Search
+            Pesquisar
           </ButtonSearch>
         </ContainerInput>
 

@@ -7,8 +7,8 @@ function Header() {
     <HeaderStyle>
       <Link class="w-2/4 flex flex-wrap items-center justify-between hover:text-rose-500 duration-500" to={'/'}>Mariana Saraiva</Link>
       <HeaderStyleP>
-        <Link class="hover:text-rose-500 duration-500" to={'/projects'}>Projects</Link>
-        <Link class="hover:text-rose-500 duration-500" to={'/contact'}>Contact</Link>
+        <Link class="hover:text-rose-500 duration-500" to={'/projects'}>Projetos</Link>
+        <Link class="hover:text-rose-500 duration-500" to={'/contact'}>Contato</Link>
       </HeaderStyleP>
     </HeaderStyle>
   );
