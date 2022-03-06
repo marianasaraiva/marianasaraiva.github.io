@@ -84,6 +84,10 @@ export const dataTechnologies = [
     image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
   },
   {
+    name: 'Tailwind',
+    image: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
+  },
+  {
     name: 'Redux',
     image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
   },
