@@ -28,6 +28,41 @@ export const BackgroundImageStyle = tw.section`
   leading-10
 `;
 
+export const TitleHome = tw.h1`
+  text-5xl
+`;
+
+export const PHome = tw.p`
+  text-xl
+`;
+
+export const AboutHome = tw.a`
+  border-solid 
+  border
+  bg-rose-700
+  text-white
+  mt-10
+  p-2
+  rounded-lg
+  hover:bg-green-900 duration-500
+`;
+
+export const ContainerAbout = tw.div`
+  shadow-lg
+  bg-black
+  text-white
+  w-2/4
+  p-10
+  rounded-lg
+`;
+
+export const TitleAbout = tw.h2`
+  text-2xl
+  pb-6
+  text-rose-900
+  font-semibold
+`;
+
 export const TechContainer = tw.ul`
   bg-rose-50
   rounded-lg
