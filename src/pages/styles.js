@@ -13,12 +13,11 @@ export const AboutStyle = tw.section`
   tracking-tight
 `;
 
-export const NameStyle = tw.section`
+export const BackgroundImageStyle = tw.section`
   flex
   items-center
   justify-center
   flex-col
-  text-xl
   font-semibold
   bg-folder2
   bg-left-top
@@ -26,32 +25,22 @@ export const NameStyle = tw.section`
   bg-cover
   w-full
   h-screen
-  tracking-tight
   leading-10
-  pt-16
-`;
-
-export const TechToolStyle = tw.section`
-  flex
-  items-center
-  justify-center
-  text-center
-  text-xl
-  flex-col
-  bg-folder2
-  bg-left-top
-  grayscale-40
-  bg-cover
-  w-full
-  h-screen
 `;
 
 export const TechContainer = tw.ul`
-  bg-rose-50 rounded-lg w-3/5 py-6
+  bg-rose-50
+  rounded-lg
+  w-3/5
+  py-6
 `;
 
 export const Title = tw.h2`
-mb-10 text-2xl text-rose-900 font-semibold
+  mb-10
+  text-2xl
+  text-rose-900
+  font-semibold
+  text-center
 `;
 
 export const CardTech = tw.button`
@@ -127,34 +116,34 @@ export const ImageProjects = tw.img`
   border
 `;
 
-export const ContactStyle = tw.div`
-  flex
-  items-center
-  justify-center
-  flex-col
-  bg-folder2
-  bg-left-top
-  grayscale-40
-  bg-cover
-  h-screen
-  text-white
-`;
-
 export const SectionStyle = tw.div`
   flex
   items-center
   justify-center
   flex-col
-  bg-black
+  bg-rose-50
+  text-black
   w-2/3
   rounded-lg
+  py-10
 `;
 
-export const LocationStyle = tw.div`
+export const ContainerContacts = tw.div`
   flex
-  items-start
-  justify-center
-  pb-4
+  items-center
+  justify-evenly
+  w-full
+`;
+
+export const StyleP = tw.p`
+  text-lg
+  font-semibold
+  mb-10
+`;
+
+export const Titleh3 = tw.h3`
+  text-lg
+  font-semibold
 `;
 
 export const LocationItemStyle = tw.div`
@@ -162,8 +151,6 @@ export const LocationItemStyle = tw.div`
   items-center
   justify-center
   flex-col
-  text-white
-  px-10
-  m-4
-  rounded-lg
+  text-black
+  text-center
 `;
