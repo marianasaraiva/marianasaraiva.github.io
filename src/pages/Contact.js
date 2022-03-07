@@ -21,7 +21,7 @@ function Contact() {
       <BackgroundImageStyle>
         <SectionStyle>
           <Title>Onde me encontrar?</Title>
-          <StyleP>Gostou? Conheça um pouco mais e vamos conversar.</StyleP>
+          <StyleP>Gostou? Conheça um pouco mais ou vamos conversar.</StyleP>
 
           <ContainerContacts>
             <LocationItemStyle>
