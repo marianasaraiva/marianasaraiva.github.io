@@ -85,7 +85,7 @@ function Projects() {
             :
             <FlexCenter>
               {
-                dataProjects.filter((project) => project.name.includes(search) || project.tecnologies.includes(search))
+                dataProjects.filter((project) => project.name.toLowerCase().includes(search.toLowerCase()) || project.tecnologies.includes(search.toLowerCase()))
                   .map((proj, i) => (
                     <Link key={i} to={{ pathname: `${proj.url}` }} target="_blank">
                       <CardImageProject
