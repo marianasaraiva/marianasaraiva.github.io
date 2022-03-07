@@ -27,8 +27,9 @@ function Projects() {
         <TechContainer>
           <Title>Tecnologias e Ferramentas</Title>
           <FlexCenter>
-            {dataTechnologies.map((tech) => (
+            {dataTechnologies.map((tech, i) => (
               <CardTech
+                key={i}
                 type="button"
                 onClick={() => setSearch(tech.name)}
               >
@@ -54,11 +55,12 @@ function Projects() {
           <InputSearch
             placeholder="Buscar por nome ou tecnologia"
             type="text"
+            value={inputState}
             onChange={({ target }) => setInputState(target.value)}
           ></InputSearch>
           <ButtonSearch
             type="button"
-            onClick={() => setSearch(inputState)}
+            onClick={() => { setSearch(inputState); setInputState('') }}
           >
             Pesquisar
           </ButtonSearch>
@@ -68,8 +70,8 @@ function Projects() {
           search.length === 0 ?
             <FlexCenter>
               {
-                dataProjects.map((project) => (
-                  <Link to={{ pathname: `${project.url}` }} target="_blank">
+                dataProjects.map((project, i) => (
+                  <Link key={i} to={{ pathname: `${project.url}` }} target="_blank">
                     <CardImageProject
                       type="button"
                     >
@@ -84,10 +86,9 @@ function Projects() {
             <FlexCenter>
               {
                 dataProjects.filter((project) => project.name.includes(search) || project.tecnologies.includes(search))
-                  .map((proj) => (
-                    <Link to={{ pathname: `${proj.url}` }} target="_blank">
+                  .map((proj, i) => (
+                    <Link key={i} to={{ pathname: `${proj.url}` }} target="_blank">
                       <CardImageProject
-                        className="hover:opacity-60"
                         type="button"
                       >
                         <ImageProjects src={proj.image} alt={proj.name} />
