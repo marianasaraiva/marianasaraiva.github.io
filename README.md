@@ -22,4 +22,4 @@ Neste projeto foi produzido um portifólio web para divulgar os projetos e ativi
 
 1. Iniciar o projeto utilizando o `npm start`;
 
-2. Acesse pelo link Vercel: 
+2. Acesse pelo link github pages: https://marianasaraiva.github.io/
