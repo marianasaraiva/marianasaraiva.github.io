@@ -6,7 +6,7 @@ import Provider from './context/Provider.js';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Provider>
         <Routes />
       </Provider>
