@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/marianasaraiva.github.io/static/css/main.a4714a4f.css",
+    "main.js": "/marianasaraiva.github.io/static/js/main.a352f6d2.js",
+    "static/media/folder2.jpg": "/marianasaraiva.github.io/static/media/folder2.d28f451ef40431c0a64e.jpg",
+    "static/media/appRecipe.png": "/marianasaraiva.github.io/static/media/appRecipe.11a80b0444f1aea38abf.png",
+    "static/media/solarSistem.png": "/marianasaraiva.github.io/static/media/solarSistem.f7ac3711ac1a0b552af9.png",
+    "static/media/shoppingCart.png": "/marianasaraiva.github.io/static/media/shoppingCart.e874dc85c6a23932a5d1.png",
+    "static/media/trybewarts.png": "/marianasaraiva.github.io/static/media/trybewarts.6ca499758316f840a773.png",
+    "static/media/trivia.png": "/marianasaraiva.github.io/static/media/trivia.60e271152b6a57b0f163.png",
+    "static/media/perfil.jpeg": "/marianasaraiva.github.io/static/media/perfil.99afd7de2841609d6086.jpeg",
+    "static/media/trybeWallet.png": "/marianasaraiva.github.io/static/media/trybeWallet.6e6560445471278fd678.png",
+    "static/media/pixel.png": "/marianasaraiva.github.io/static/media/pixel.53132d4c8903e3afdd8c.png",
+    "index.html": "/marianasaraiva.github.io/index.html",
+    "main.a4714a4f.css.map": "/marianasaraiva.github.io/static/css/main.a4714a4f.css.map",
+    "main.a352f6d2.js.map": "/marianasaraiva.github.io/static/js/main.a352f6d2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a4714a4f.css",
+    "static/js/main.a352f6d2.js"
+  ]
+}
