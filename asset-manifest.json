@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/marianasaraiva.github.io/static/css/main.a4714a4f.css",
-    "main.js": "/marianasaraiva.github.io/static/js/main.a352f6d2.js",
-    "static/media/folder2.jpg": "/marianasaraiva.github.io/static/media/folder2.d28f451ef40431c0a64e.jpg",
-    "static/media/appRecipe.png": "/marianasaraiva.github.io/static/media/appRecipe.11a80b0444f1aea38abf.png",
-    "static/media/solarSistem.png": "/marianasaraiva.github.io/static/media/solarSistem.f7ac3711ac1a0b552af9.png",
-    "static/media/shoppingCart.png": "/marianasaraiva.github.io/static/media/shoppingCart.e874dc85c6a23932a5d1.png",
-    "static/media/trybewarts.png": "/marianasaraiva.github.io/static/media/trybewarts.6ca499758316f840a773.png",
-    "static/media/trivia.png": "/marianasaraiva.github.io/static/media/trivia.60e271152b6a57b0f163.png",
-    "static/media/perfil.jpeg": "/marianasaraiva.github.io/static/media/perfil.99afd7de2841609d6086.jpeg",
-    "static/media/trybeWallet.png": "/marianasaraiva.github.io/static/media/trybeWallet.6e6560445471278fd678.png",
-    "static/media/pixel.png": "/marianasaraiva.github.io/static/media/pixel.53132d4c8903e3afdd8c.png",
-    "index.html": "/marianasaraiva.github.io/index.html",
-    "main.a4714a4f.css.map": "/marianasaraiva.github.io/static/css/main.a4714a4f.css.map",
-    "main.a352f6d2.js.map": "/marianasaraiva.github.io/static/js/main.a352f6d2.js.map"
+    "main.css": "/static/css/main.48630f2b.css",
+    "main.js": "/static/js/main.c88b720d.js",
+    "static/media/folder2.jpg": "/static/media/folder2.d28f451ef40431c0a64e.jpg",
+    "static/media/appRecipe.png": "/static/media/appRecipe.11a80b0444f1aea38abf.png",
+    "static/media/solarSistem.png": "/static/media/solarSistem.f7ac3711ac1a0b552af9.png",
+    "static/media/shoppingCart.png": "/static/media/shoppingCart.e874dc85c6a23932a5d1.png",
+    "static/media/trybewarts.png": "/static/media/trybewarts.6ca499758316f840a773.png",
+    "static/media/trivia.png": "/static/media/trivia.60e271152b6a57b0f163.png",
+    "static/media/perfil.jpeg": "/static/media/perfil.99afd7de2841609d6086.jpeg",
+    "static/media/trybeWallet.png": "/static/media/trybeWallet.6e6560445471278fd678.png",
+    "static/media/pixel.png": "/static/media/pixel.53132d4c8903e3afdd8c.png",
+    "index.html": "/index.html",
+    "main.48630f2b.css.map": "/static/css/main.48630f2b.css.map",
+    "main.c88b720d.js.map": "/static/js/main.c88b720d.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4714a4f.css",
-    "static/js/main.a352f6d2.js"
+    "static/css/main.48630f2b.css",
+    "static/js/main.c88b720d.js"
   ]
 }
