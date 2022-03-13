@@ -47,14 +47,14 @@ export const dataProjects = [
     image: Trivia,
     collaborative: [ 'Alissandra Lima', 'Ruan Cunha', 'Samuel Gonçalves' ],
     tecnologies: [ 'react', 'redux', 'css' ],
-    url: "https://github.com/tryber/sd-016-b-project-trivia-react-redux/tree/main-group-15",
+    url: "https://github.com/marianasaraiva/trybe-project-trivia",
   },
   {
     name: 'App Recipe',
     image: AppRecipe,
     collaborative: [ 'Airton Lopes', 'Bruno Faria', 'Renata Domingues' ],
     tecnologies: [ 'react', 'contextapi', 'hooks' ],
-    url: "https://github.com/tryber/sd-016-b-project-recipes-app/tree/main-group-3",
+    url: "https://github.com/marianasaraiva/trybe-project-app-recipe",
   },
 ];
 
