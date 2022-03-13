@@ -36,11 +36,15 @@ function Home() {
         <ContainerAbout>
           <TitleAbout id="about">Sobre mim</TitleAbout>
           <p>
-          <Span>S</Span>ou tímida e falo muito, parece contraditório mas é exatamente assim. Trabalhei durante anos na área hospitalar, aprendendo a ter resiliência, senso de urgência e a trabalhar em equipe. E foi quando precisei transformar os registros em papel para o sistema que me apaixonei pela Tecnologia. A adolescente que havia prestado vestibular para matemática computacional, surgiu e tomou conta de mim.
+          <Span>E</Span>m uma dessas voltas que a vida dá, conheci o mundo da tecnologia e me apaixonei! Atualmente sou desenvolvedora Full Stack em formação pela Trybe. Concluído o módulo de Front-end, neste momento estou me aventurando nos desafios do Back-end, reforçando e aprimorando os conhecimentos adquiridos ao longo do curso. 
           </p>
           <p>
-          Hoje sou estudante de Desenvolvimento Web na Trybe. Atualmente estou me aventurando nos desafios do Back-end, e reforçando os conhecimentos adquiridos no Front-end. Como dizem por aí, metade Dev! Sejam bem vindos! 
+          Trabalhei durante anos na área hospitalar, aprendendo a ter resiliência, senso de urgência e a trabalhar em equipe.
           </p>
+          <p>
+          Como dizem por aí, hoje sou metade Dev!
+          </p>
+          <p>Sejam bem vindos!</p>
         </ContainerAbout>
       </AboutStyle>
       <Footer />
