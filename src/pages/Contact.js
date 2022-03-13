@@ -32,10 +32,10 @@ function Contact() {
               <Titleh3>Envie um e-mail</Titleh3>
               <p>marianascm8@gmail.com</p>
             </LocationItemStyle>
-            <Link className="bg-white hover:bg-rose-900 rounded-full" to={{ pathname: "https://github.com/marianasaraiva" }} target="_blank">
+            <Link className="bg-white hover:bg-rose-600 rounded-full" to={{ pathname: "https://github.com/marianasaraiva" }} target="_blank">
               <img width="60" src={Github} alt="icone do github" />
             </Link>
-            <Link className="bg-white hover:bg-rose-900 rounded-full" to={{ pathname: "https://www.linkedin.com/in/marianascmoura/" }} target="_blank">
+            <Link className="bg-white hover:bg-rose-600 rounded-full" to={{ pathname: "https://www.linkedin.com/in/marianascmoura/" }} target="_blank">
               <img width="60" src={Linkedin} alt="icone do linkedin" />
             </Link>
             <LocationItemStyle>

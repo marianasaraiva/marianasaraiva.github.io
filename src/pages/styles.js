@@ -30,6 +30,7 @@ export const BackgroundImageStyle = tw.section`
 
 export const TitleHome = tw.h1`
   text-5xl
+  font-bold
 `;
 
 export const PHome = tw.p`
@@ -59,7 +60,7 @@ export const ContainerAbout = tw.div`
 export const TitleAbout = tw.h2`
   text-2xl
   pb-6
-  text-rose-900
+  text-rose-600
   font-semibold
 `;
 
@@ -75,11 +76,19 @@ export const TechContainer = tw.ul`
 `;
 
 export const Title = tw.h2`
-  mb-10
+  mb-5
   text-2xl
-  text-rose-900
+  text-rose-600
   font-semibold
   text-center
+`;
+
+export const ProjectP = tw.p`
+  mb-5
+  px-5
+  text-center
+  font-normal
+  leading-normal
 `;
 
 export const CardTech = tw.button`
