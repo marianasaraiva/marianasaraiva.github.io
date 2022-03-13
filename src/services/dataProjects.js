@@ -25,7 +25,7 @@ export const dataProjects = [
     name: 'Shopping Cart',
     image: ShoppingCart,
     collaborative: [],
-    tecnologies: [ 'html', 'css', 'javascript' ],
+    tecnologies: [ 'html', 'css', 'javascript', 'jest' ],
     url: "https://github.com/marianasaraiva/trybe-project-shopping-cart",
   },
   {
