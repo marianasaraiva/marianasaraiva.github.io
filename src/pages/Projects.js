@@ -7,6 +7,7 @@ import {
   BackgroundImageStyle,
   TechContainer,
   Title,
+  ProjectP,
   CardTech,
   ProjectStyle,
   ContainerInput,
@@ -26,6 +27,9 @@ function Projects() {
       <BackgroundImageStyle>
         <TechContainer>
           <Title>Tecnologias e Ferramentas</Title>
+          <ProjectP>
+            Lista das principais tecnologias desenvolvidas. Ao selecionar uma tecnologia, ocorre o filtro dos projetos que foram desenvolvidos utilizando ela.
+          </ProjectP>
           <FlexCenter>
             {dataTechnologies.map((tech, i) => (
               <CardTech
@@ -50,7 +54,8 @@ function Projects() {
       <ProjectStyle>
         <Title>Projetos</Title>
         <p>
-        Projetos concluídos usando as tecnologias aprendidas durante o curso de Desenvolvimento Web.</p>
+          Projetos concluídos usando as tecnologias aprendidas durante o curso de Desenvolvimento Web.
+        </p>
         <ContainerInput>
           <InputSearch
             placeholder="Buscar por nome ou tecnologia"
