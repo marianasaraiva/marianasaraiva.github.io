@@ -35,6 +35,7 @@ function Projects() {
               <CardTech
                 key={i}
                 type="button"
+                href="#techCard"
                 onClick={() => setSearch(tech.name)}
               >
                 <img
@@ -52,7 +53,8 @@ function Projects() {
       </BackgroundImageStyle>
 
       <ProjectStyle>
-        <Title>Projetos</Title>
+        <Title id="techCard">
+          Projetos</Title>
         <p>
           Projetos concluídos usando as tecnologias aprendidas durante o curso de Desenvolvimento Web.
         </p>
@@ -104,6 +106,7 @@ function Projects() {
             </FlexCenter>
         }
       </ProjectStyle>
+
       <Footer />
     </div>
   );
