@@ -21,7 +21,6 @@ export const BackgroundImageStyle = tw.section`
   font-semibold
   bg-folder2
   bg-left-top
-  grayscale-40
   bg-cover
   w-full
   h-screen
@@ -31,26 +30,38 @@ export const BackgroundImageStyle = tw.section`
 export const TitleHome = tw.h1`
   text-5xl
   font-bold
+  bg-red-100
+  opacity-70
+  text-black
+  w-full
+  text-center
 `;
 
 export const PHome = tw.p`
   text-xl
+  bg-yellow-50
+  opacity-70
+  text-black
+  w-full
+  text-center
 `;
 
 export const AboutHome = tw.a`
   border-solid 
-  border
-  bg-rose-700
+  border-white
+  bg-red-700
   text-white
+  px-16
+  py-1
+  hover:bg-rose-600 duration-500
+  border-black
+  rounded-4xl
   mt-10
-  p-2
-  rounded-lg
-  hover:bg-green-900 duration-500
 `;
 
 export const ContainerAbout = tw.div`
-  shadow-lg
-  bg-black
+  shadow-xl
+  bg-stone-900
   text-white
   w-2/4
   p-10
@@ -60,7 +71,7 @@ export const ContainerAbout = tw.div`
 export const TitleAbout = tw.h2`
   text-2xl
   pb-6
-  text-rose-600
+  text-red-600
   font-semibold
 `;
 
@@ -69,7 +80,7 @@ export const Span = tw.span`
 `;
 
 export const TechContainer = tw.ul`
-  bg-rose-50
+  bg-yellow-50
   rounded-lg
   w-3/5
   py-6
@@ -78,7 +89,7 @@ export const TechContainer = tw.ul`
 export const Title = tw.h2`
   mb-5
   text-2xl
-  text-rose-600
+  text-red-600
   font-semibold
   text-center
 `;
@@ -91,8 +102,8 @@ export const ProjectP = tw.p`
   leading-normal
 `;
 
-export const CardTech = tw.button`
-  hover:grayscale-[90%]
+export const CardTech = tw.a`
+  hover:grayscale
   flex
   flex-col
   items-center
@@ -119,22 +130,22 @@ export const ContainerInput = tw.div`
 `;
 
 export const InputSearch = tw.input`
-  border-2
+  border
   text-center
   py-2
   px-16
-  rounded-lg
+  rounded-4xl 
 `;
 
 export const ButtonSearch = tw.button`
-  border-2
+  border
   px-16
   py-2
   my-4
-  bg-rose-900
+  bg-red-600
   text-white
-  rounded-lg
-  hover:bg-green-900
+  rounded-4xl
+  hover:bg-rose-600
 `;
 
 export const FlexCenter = tw.div`
@@ -155,7 +166,8 @@ export const CardImageProject = tw.button`
   rounded-lg
   h-72
   w-96
-  shadow-lg
+  shadow-xl
+  mb-4
   hover:opacity-60
 `;
 
@@ -169,7 +181,7 @@ export const SectionStyle = tw.div`
   items-center
   justify-center
   flex-col
-  bg-rose-50
+  bg-yellow-50
   text-black
   w-2/3
   rounded-lg
