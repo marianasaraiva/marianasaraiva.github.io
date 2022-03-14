@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.cbb560e1.css",
-    "main.js": "/static/js/main.e8012a58.js",
+    "main.css": "/static/css/main.a3f6fdf3.css",
+    "main.js": "/static/js/main.b41a504e.js",
     "static/media/folder2.jpg": "/static/media/folder2.d28f451ef40431c0a64e.jpg",
     "static/media/appRecipe.png": "/static/media/appRecipe.11a80b0444f1aea38abf.png",
     "static/media/solarSistem.png": "/static/media/solarSistem.f7ac3711ac1a0b552af9.png",
@@ -12,11 +12,11 @@
     "static/media/trybeWallet.png": "/static/media/trybeWallet.6e6560445471278fd678.png",
     "static/media/pixel.png": "/static/media/pixel.53132d4c8903e3afdd8c.png",
     "index.html": "/index.html",
-    "main.cbb560e1.css.map": "/static/css/main.cbb560e1.css.map",
-    "main.e8012a58.js.map": "/static/js/main.e8012a58.js.map"
+    "main.a3f6fdf3.css.map": "/static/css/main.a3f6fdf3.css.map",
+    "main.b41a504e.js.map": "/static/js/main.b41a504e.js.map"
   },
   "entrypoints": [
-    "static/css/main.cbb560e1.css",
-    "static/js/main.e8012a58.js"
+    "static/css/main.a3f6fdf3.css",
+    "static/js/main.b41a504e.js"
   ]
 }
