@@ -99,4 +99,8 @@ export const dataTechnologies = [
     name: 'MySQL',
     image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
   },
+  {
+    name: 'NodeJS',
+    image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
+  },
 ];

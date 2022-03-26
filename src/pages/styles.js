@@ -198,7 +198,6 @@ export const ContainerContacts = tw.div`
 export const StyleP = tw.p`
   text-lg
   font-semibold
-  mb-10
 `;
 
 export const Titleh3 = tw.h3`
@@ -213,4 +212,31 @@ export const LocationItemStyle = tw.div`
   flex-col
   text-black
   text-center
+`;
+
+export const ContainerMidias = tw.div`
+  flex
+  items-center
+  justify-center
+  w-full
+  mb-5
+`;
+
+export const InputContact = tw.input`
+  flex
+  items-center
+  justify-center
+  border-2
+  text-center
+  m-2
+  px-48
+  rouded-lg
+`;
+
+export const TextAreaContact = tw.textarea`
+  text-center
+  border-2
+  m-2
+  px-52
+  rouded-lg
 `;
