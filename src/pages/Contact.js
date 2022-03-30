@@ -6,7 +6,7 @@ import {
   BackgroundImageStyle,
   Title,
   SectionStyle,
-  ContainerContacts,
+  // ContainerContacts,
   StyleP,
   Titleh3,
   ButtonSearch,
@@ -54,11 +54,11 @@ function Contact() {
               <Titleh3>Envie um e-mail</Titleh3>
               <p>marianascm8@gmail.com</p>
             </LocationItemStyle>
-              <Link className="bg-white hover:bg-rose-600 rounded-full m-8" to={{ pathname: "https://github.com/marianasaraiva" }} target="_blank">
-                <img width="60" src={Github} alt="icone do github" />
+              <Link className="opacity-60 hover:bg-orange-900 rounded-full m-8" to={{ pathname: "https://github.com/marianasaraiva" }} target="_blank">
+                <img className="w-8 md:w-12 lg:w-18" src={Github} alt="icone do github" />
               </Link>
-              <Link className="bg-white hover:bg-rose-600 rounded-full m-8" to={{ pathname: "https://www.linkedin.com/in/marianascmoura/" }} target="_blank">
-                <img width="60" src={Linkedin} alt="icone do linkedin" />
+              <Link className="opacity-60 hover:bg-orange-900 rounded-full m-8" to={{ pathname: "https://www.linkedin.com/in/marianascmoura/" }} target="_blank">
+                <img className="w-8 md:w-12 lg:w-18" src={Linkedin} alt="icone do linkedin" />
               </Link>
             <LocationItemStyle>
               <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
@@ -71,7 +71,7 @@ function Contact() {
           <StyleP>Gostou? Vamos conversar... Envie sua mensagem!</StyleP>
 
           <form
-            className="text-center my-2"
+            className="text-center my-2 w-10/12 flex flex-col items-center justify-evenly"
             action="malito:marianascm8@gmail.com"
             method="post"
             encType="multipart/form-data"
@@ -105,11 +105,6 @@ function Contact() {
               </ButtonSearch>
             </div>
           </form>
-          <ContainerContacts>
-
-
-          </ContainerContacts>
-
         </SectionStyle>
       </BackgroundImageStyle>
       <Footer />

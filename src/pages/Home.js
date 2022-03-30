@@ -9,6 +9,7 @@ import {
   PHome,
   AboutHome,
   ContainerAbout,
+  ImageAbout,
   TitleAbout } from './styles.js';
 import perfil from '../images/perfil.jpeg';
 
@@ -27,9 +28,7 @@ function Home() {
 
       </BackgroundImageStyle>
       <AboutStyle>
-        <img
-          width="250px"
-          className="rounded-full"
+        <ImageAbout
           src={perfil}
           alt="Foto de Perfil"
         />

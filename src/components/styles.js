@@ -4,20 +4,30 @@ export const HeaderStyle = tw.header`
   flex
   items-center
   justify-evenly
+  flex-column
+  lg: flex-row
   w-full
-  text-white
-  bg-black
-  py-6
-  text-xl
+  text-stone-900
+  bg-yellow-50
+  lg:py-4
+  text-md
+  lg:text-xl
   font-semibold
-  `;
+  p-2
+  opacity-70
+`;
 
 export const HeaderStyleP = tw.div`
   flex
+  flex-column
+  lg: flex-row
   items-center
   justify-between
-  flex-wrap
-  w-1/4
+  lg:flex-wrap
+  w-full
+  lg:w-1/4
+  text-md
+  lg:text-xl
 `;
 
 export const FooterStyled = tw.footer`
@@ -25,6 +35,8 @@ export const FooterStyled = tw.footer`
   relative
   bottom-0
   w-full
-  text-l
+  text-sm
+  lg:text-l
+  text-orange-900
   py-4
 `;

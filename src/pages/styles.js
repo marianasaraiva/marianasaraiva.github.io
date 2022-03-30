@@ -4,10 +4,11 @@ export const AboutStyle = tw.section`
   flex
   items-center
   justify-evenly
-  flex-row
+  lg: flex-row
+  flex-cols
   text-center
   text-l
-  bg-white
+  md:bg-yellow-50
   w-full
   h-screen
   tracking-tight
@@ -19,8 +20,8 @@ export const BackgroundImageStyle = tw.section`
   justify-center
   flex-col
   font-semibold
-  bg-folder2
-  bg-left-top
+  bg-folder
+  bg-bottom
   bg-cover
   w-full
   h-screen
@@ -28,19 +29,23 @@ export const BackgroundImageStyle = tw.section`
 `;
 
 export const TitleHome = tw.h1`
-  text-5xl
+  text-2xl
+  md:text-3xl
+  lg:text-5xl
   font-bold
-  bg-red-100
-  opacity-70
+  opacity-60
+  bg-yellow-50
   text-black
   w-full
   text-center
 `;
 
 export const PHome = tw.p`
-  text-xl
+  text-md
+  md: text-lg
+  lg:text-xl
   bg-yellow-50
-  opacity-70
+  opacity-50
   text-black
   w-full
   text-center
@@ -49,11 +54,14 @@ export const PHome = tw.p`
 export const AboutHome = tw.a`
   border-solid 
   border-white
-  bg-red-700
+  bg-orange-700
   text-white
-  px-16
-  py-1
-  hover:bg-rose-600 duration-500
+  py-2
+  px-8
+  lg:px-16
+  text-sm
+  lg:text-lg
+  hover:bg-stone-500 duration-500
   border-black
   rounded-4xl
   mt-10
@@ -61,17 +69,18 @@ export const AboutHome = tw.a`
 
 export const ContainerAbout = tw.div`
   shadow-xl
-  bg-stone-900
-  text-white
-  w-2/4
+  bg-orange-200
+  opacity-80
+  text-orange-900 
+  w-full
+  lg:w-3/5
   p-10
-  rounded-lg
 `;
 
 export const TitleAbout = tw.h2`
   text-2xl
   pb-6
-  text-red-600
+  text-orange-900
   font-semibold
 `;
 
@@ -81,20 +90,21 @@ export const Span = tw.span`
 
 export const TechContainer = tw.ul`
   bg-yellow-50
-  rounded-lg
-  w-3/5
+  opacity-75
+  w-full
   py-6
 `;
 
 export const Title = tw.h2`
   mb-5
   text-2xl
-  text-red-600
+  text-orange-900
   font-semibold
   text-center
 `;
 
 export const ProjectP = tw.p`
+  text-orange-900
   mb-5
   px-5
   text-center
@@ -110,7 +120,10 @@ export const CardTech = tw.a`
   justify-evelyn
   box-border
   font-semibold
-  w-32 m-2
+  text-orange-900
+  w-16
+  lg:w-32
+  m-2
 `;
 
 export const ProjectStyle = tw.section`
@@ -120,11 +133,14 @@ export const ProjectStyle = tw.section`
   justify-center
   text-center
   py-10
+  opacity-80
 `;
 
 export const ContainerInput = tw.div`
   flex
   items-center
+  flex-col
+  md:flex-row
   w-2/4
   justify-evenly
 `;
@@ -133,19 +149,26 @@ export const InputSearch = tw.input`
   border
   text-center
   py-2
-  px-16
+  px-8
+  lg:px-16
+  text-sm
+  lg:text-lg
   rounded-4xl 
 `;
 
 export const ButtonSearch = tw.button`
-  border
-  px-16
-  py-2
-  my-4
-  bg-red-600
+  border-solid 
+  border-white
+  bg-orange-700
   text-white
+  text-sm
+  lg:text-lg
+  px-4
+  md:px-8
+  lg:px-16
+  py-2
+  hover:bg-stone-500 duration-500
   rounded-4xl
-  hover:bg-rose-600
 `;
 
 export const FlexCenter = tw.div`
@@ -154,7 +177,7 @@ export const FlexCenter = tw.div`
   flex-wrap
   items-center
   justify-evenly
-  w-full
+  bg-yellow-50
 `;
 
 export const CardImageProject = tw.button`
@@ -163,12 +186,13 @@ export const CardImageProject = tw.button`
   items-center
   justify-evenly
   box-border
-  rounded-lg
+  bg-orange-50
   h-72
-  w-96
+  w-96  
   shadow-xl
-  mb-4
-  hover:opacity-60
+  my-4
+  grayscale
+  hover:grayscale-[10%]
 `;
 
 export const ImageProjects = tw.img`
@@ -176,32 +200,48 @@ export const ImageProjects = tw.img`
   border
 `;
 
+export const ImageAbout = tw.img`
+  sm:invisible
+  lg:visible
+  sx:w-0
+  rounded-full
+  grayscale-[90%]
+  opacity-80
+  shadow-xl
+  w-48
+  lg:w-72
+`;
+
 export const SectionStyle = tw.div`
   flex
   items-center
   justify-center
   flex-col
-  bg-yellow-50
-  text-black
-  w-2/3
-  rounded-lg
+  lg:bg-yellow-50
+  text-orange-900
+  w-full
   py-10
+  opacity-75
 `;
 
-export const ContainerContacts = tw.div`
-  flex
-  items-center
-  justify-evenly
-  w-full
-`;
+// export const ContainerContacts = tw.div`
+//   flex
+//   items-center
+//   justify-evenly
+//   w-full
+//   border-4
+// `;
 
 export const StyleP = tw.p`
-  text-lg
+  text-md
+  lg:text-lg
   font-semibold
+  text-center
 `;
 
 export const Titleh3 = tw.h3`
-  text-lg
+  text-sm
+  lg:text-lg
   font-semibold
 `;
 
@@ -210,14 +250,18 @@ export const LocationItemStyle = tw.div`
   items-center
   justify-center
   flex-col
-  text-black
+  text-stone-500
   text-center
 `;
 
 export const ContainerMidias = tw.div`
   flex
+  flex-col
   items-center
   justify-center
+  md:flex-row
+  text-sm
+  lg:text-lg
   w-full
   mb-5
 `;
@@ -229,7 +273,7 @@ export const InputContact = tw.input`
   border-2
   text-center
   m-2
-  px-48
+  w-11/12
   rouded-lg
 `;
 
@@ -237,6 +281,6 @@ export const TextAreaContact = tw.textarea`
   text-center
   border-2
   m-2
-  px-52
+  w-11/12
   rouded-lg
 `;

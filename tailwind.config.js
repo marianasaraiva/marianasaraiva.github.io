@@ -11,13 +11,14 @@ module.exports = {
   // },
   theme: {
     screens: {
+      sx: '250px',
       sm: '480px',
       md: '768px',
       lg: '976px',
       xl: '1440px',
     },
     backgroundImage: {
-      'folder1': "url('/src/images/folder1.jpg')",
+      'folder': "url('/src/images/folder.jpg')",
       'folder2': "url('/src/images/folder2.jpg')",
       'folder3': "url('/src/images/folder3.jpg')",
     },

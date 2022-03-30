@@ -7,15 +7,15 @@ import Linkedin from '../images/icon-linkedin.png';
 function Header() {
   return (
     <HeaderStyle>
-      <Link className="w-2/4 flex flex-wrap items-center justify-between hover:text-rose-600 duration-500" to={'/'}>Mariana Saraiva</Link>
+      <Link className="lg:w-2/4 w-full flex flex-wrap items-center p-2 justify-center md:justify-between hover:text-orange-900 duration-500" to={'/'}>Mariana Saraiva</Link>
       <HeaderStyleP>
-        <Link className="hover:text-rose-600 duration-500" to={'/projects'}>Projetos</Link>
-        <Link className="hover:text-rose-600 duration-500" to={'/contact'}>Contato</Link>
-        <Link className="bg-white hover:bg-rose-600 rounded-full duration-500" to={{ pathname: "https://github.com/marianasaraiva" }} target="_blank">
-          <img width="40" src={Github} alt="icone do github duration-500" />
+        <Link className="hover:text-orange-800 duration-500 p-2" to={'/projects'}>Projetos</Link>
+        <Link className="hover:text-orange-800 duration-500 p-2" to={'/contact'}>Contatos</Link>
+        <Link className="hover:bg-orange-800 rounded-full duration-500 sx:invisible md:visible" to={{ pathname: "https://github.com/marianasaraiva" }} target="_blank">
+          <img className="w-10 lg:w-18" src={Github} alt="icone do github" />
         </Link>
-        <Link className="bg-white hover:bg-rose-600 rounded-full" to={{ pathname: "https://www.linkedin.com/in/marianascmoura/" }} target="_blank">
-          <img width="40" src={Linkedin} alt="icone do linkedin" />
+        <Link className="hover:bg-orange-800 rounded-full duration-500 sx:invisible md:visible" to={{ pathname: "https://www.linkedin.com/in/marianascmoura/" }} target="_blank">
+          <img className="w-10 lg:w-18" src={Linkedin} alt="icone do linkedin" />
         </Link>
       </HeaderStyleP>
     </HeaderStyle>

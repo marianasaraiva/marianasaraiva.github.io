@@ -55,9 +55,9 @@ function Projects() {
       <ProjectStyle>
         <Title id="techCard">
           Projetos</Title>
-        <p>
+        <ProjectP>
           Projetos concluídos usando as tecnologias aprendidas durante o curso de Desenvolvimento Web.
-        </p>
+        </ProjectP>
         <ContainerInput>
           <InputSearch
             placeholder="Buscar por nome ou tecnologia"
@@ -83,7 +83,7 @@ function Projects() {
                       type="button"
                     >
                       <ImageProjects src={project.image} alt={project.name} />
-                      <h3>{project.name}</h3>
+                      <ProjectP>{project.name}</ProjectP>
                     </CardImageProject>
                   </Link>
                 ))
@@ -99,7 +99,7 @@ function Projects() {
                         type="button"
                       >
                         <ImageProjects src={proj.image} alt={proj.name} />
-                        <h3>{proj.name}</h3>
+                        <ProjectP>{proj.name}</ProjectP>
                       </CardImageProject>
                     </Link>
                   ))}
