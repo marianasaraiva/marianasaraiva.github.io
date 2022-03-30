@@ -4,8 +4,8 @@ export const AboutStyle = tw.section`
   flex
   items-center
   justify-evenly
-  lg: flex-row
-  flex-cols
+  flex-col
+  md:flex-row
   text-center
   text-l
   md:bg-yellow-50
@@ -73,8 +73,11 @@ export const ContainerAbout = tw.div`
   opacity-80
   text-orange-900 
   w-full
-  lg:w-3/5
-  p-10
+  text-sm
+  lg:text-xl
+  md:w-3/5
+  p-2
+  lg:p-10
 `;
 
 export const TitleAbout = tw.h2`
@@ -119,11 +122,12 @@ export const CardTech = tw.a`
   items-center
   justify-evelyn
   box-border
-  font-semibold
+  font-semibold 
   text-orange-900
-  w-16
+  w-12
+  md:w-16
   lg:w-32
-  m-2
+  m-4
 `;
 
 export const ProjectStyle = tw.section`
@@ -200,15 +204,16 @@ export const ImageProjects = tw.img`
   border
 `;
 
+// sm:invisible
+// lg:visible
+// sx:w-0
 export const ImageAbout = tw.img`
-  sm:invisible
-  lg:visible
-  sx:w-0
   rounded-full
   grayscale-[90%]
   opacity-80
   shadow-xl
-  w-48
+  w-20
+  md:w-48
   lg:w-72
 `;
 
@@ -217,10 +222,10 @@ export const SectionStyle = tw.div`
   items-center
   justify-center
   flex-col
-  lg:bg-yellow-50
   text-orange-900
   w-full
-  py-10
+  py-2
+  md:py-10
   opacity-75
 `;
 
@@ -263,7 +268,7 @@ export const ContainerMidias = tw.div`
   text-sm
   lg:text-lg
   w-full
-  mb-5
+  lg:mb-4
 `;
 
 export const InputContact = tw.input`
@@ -280,7 +285,7 @@ export const InputContact = tw.input`
 export const TextAreaContact = tw.textarea`
   text-center
   border-2
-  m-2
+  mb-4
   w-11/12
   rouded-lg
 `;

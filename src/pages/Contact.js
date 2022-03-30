@@ -54,10 +54,10 @@ function Contact() {
               <Titleh3>Envie um e-mail</Titleh3>
               <p>marianascm8@gmail.com</p>
             </LocationItemStyle>
-              <Link className="opacity-60 hover:bg-orange-900 rounded-full m-8" to={{ pathname: "https://github.com/marianasaraiva" }} target="_blank">
+              <Link className="opacity-60 hover:bg-orange-900 rounded-full m-2" to={{ pathname: "https://github.com/marianasaraiva" }} target="_blank">
                 <img className="w-8 md:w-12 lg:w-18" src={Github} alt="icone do github" />
               </Link>
-              <Link className="opacity-60 hover:bg-orange-900 rounded-full m-8" to={{ pathname: "https://www.linkedin.com/in/marianascmoura/" }} target="_blank">
+              <Link className="opacity-60 hover:bg-orange-900 rounded-full m-2" to={{ pathname: "https://www.linkedin.com/in/marianascmoura/" }} target="_blank">
                 <img className="w-8 md:w-12 lg:w-18" src={Linkedin} alt="icone do linkedin" />
               </Link>
             <LocationItemStyle>
@@ -71,7 +71,7 @@ function Contact() {
           <StyleP>Gostou? Vamos conversar... Envie sua mensagem!</StyleP>
 
           <form
-            className="text-center my-2 w-10/12 flex flex-col items-center justify-evenly"
+            className="text-center w-10/12 m-2 flex flex-col items-center justify-evenly"
             action="malito:marianascm8@gmail.com"
             method="post"
             encType="multipart/form-data"
