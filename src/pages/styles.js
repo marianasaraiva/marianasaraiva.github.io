@@ -124,8 +124,7 @@ export const CardTech = tw.a`
   box-border
   font-semibold 
   text-orange-900
-  w-12
-  md:w-16
+  w-16
   lg:w-32
   m-4
 `;
