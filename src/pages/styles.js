@@ -88,7 +88,8 @@ export const TitleAbout = tw.h2`
 `;
 
 export const Span = tw.span`
-  text-4xl
+  text-xl
+  lg:text-3xl
 `;
 
 export const TechContainer = tw.ul`

@@ -5,59 +5,82 @@ import SolarSistem from '../images/solarSistem.png';
 import Trivia from '../images/trivia.png';
 import AppRecipe from '../images/appRecipe.png';
 import TrybeWallet from '../images/trybeWallet.png';
+import TalkerManager from '../images/talkerManager.png';
+import OneForAll from '../images/oneForAll.png';
+import Portfolio from '../images/portfolio.png';
 
 export const dataProjects = [
   {
-    name: 'Pixel Arts',
-    image: Pixel,
+    name: 'Portfolio',
+    image: Portfolio,
     collaborative: [],
-    tecnologies: [ 'html', 'css', 'javascript' ],
-    url: "https://github.com/marianasaraiva/trybe-project-pixels-art",
+    tecnologies: ['react', 'contextapi', 'hooks', 'tailwind', 'styledcomponent', 'github'],
+    url: "https://github.com/marianasaraiva/marianasaraiva.github.io",
   },
   {
     name: 'Trybewarts',
     image: Trybewarts,
-    collaborative: [ 'Juliana Miranda' ],
-    tecnologies: [ 'html', 'css', 'javascript' ],
+    collaborative: ['Juliana Miranda'],
+    tecnologies: ['html', 'css', 'javascript', 'github'],
     url: "https://github.com/marianasaraiva/trybe-project-trybewarts",
-  },
-  {
-    name: 'Shopping Cart',
-    image: ShoppingCart,
-    collaborative: [],
-    tecnologies: [ 'html', 'css', 'javascript', 'jest' ],
-    url: "https://github.com/marianasaraiva/trybe-project-shopping-cart",
-  },
-  {
-    name: 'Solar System',
-    image: SolarSistem,
-    collaborative: [],
-    tecnologies: [ 'react', 'css' ],
-    url: "https://github.com/marianasaraiva/trybe-project-solar-system",
   },
   {
     name: 'TrybeWallet',
     image: TrybeWallet,
     collaborative: [],
-    tecnologies: [ 'react', 'redux', 'css' ],
+    tecnologies: ['react', 'redux', 'css', 'github'],
     url: "https://github.com/marianasaraiva/trybe-project-trybewallet",
   },
   {
     name: 'Trivia',
     image: Trivia,
-    collaborative: [ 'Alissandra Lima', 'Ruan Cunha', 'Samuel Gonçalves' ],
-    tecnologies: [ 'react', 'redux', 'css' ],
+    collaborative: ['Alissandra Lima', 'Ruan Cunha', 'Samuel Gonçalves'],
+    tecnologies: ['react', 'redux', 'css', 'github'],
     url: "https://github.com/marianasaraiva/trybe-project-trivia",
   },
   {
     name: 'App Recipe',
     image: AppRecipe,
-    collaborative: [ 'Airton Lopes', 'Bruno Faria', 'Renata Domingues' ],
-    tecnologies: [ 'react', 'contextapi', 'hooks' ],
+    collaborative: ['Airton Lopes', 'Bruno Faria', 'Renata Domingues'],
+    tecnologies: ['react', 'contextapi', 'hooks', 'github'],
     url: "https://github.com/marianasaraiva/trybe-project-app-recipe",
   },
+  {
+    name: 'Solar System',
+    image: SolarSistem,
+    collaborative: [],
+    tecnologies: ['react', 'css', 'github'],
+    url: "https://github.com/marianasaraiva/trybe-project-solar-system",
+  },
+  {
+    name: 'One For All',
+    image: OneForAll,
+    collaborative: [],
+    tecnologies: ['mysql', 'javascript', 'github'],
+    url: "https://github.com/marianasaraiva/trybe-project-one-for-all ",
+  },
+  {
+    name: 'Shopping Cart',
+    image: ShoppingCart,
+    collaborative: [],
+    tecnologies: ['html', 'css', 'javascript', 'jest', 'github'],
+    url: "https://github.com/marianasaraiva/trybe-project-shopping-cart",
+  },
+  {
+    name: 'Talker Manager',
+    image: TalkerManager,
+    collaborative: [],
+    tecnologies: ['nodejs', 'css', 'javascript', 'github'],
+    url: "https://github.com/marianasaraiva/trybe-project-talker-manager",
+  },
+  {
+    name: 'Pixel Arts',
+    image: Pixel,
+    collaborative: [],
+    tecnologies: ['html', 'css', 'javascript', 'github'],
+    url: "https://github.com/marianasaraiva/trybe-project-pixels-art",
+  },
 ];
-
 export const dataTechnologies = [
   {
     name: 'HTML',

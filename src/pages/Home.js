@@ -35,15 +35,14 @@ function Home() {
         <ContainerAbout>
           <TitleAbout id="about">Sobre mim</TitleAbout>
           <p>
+          <p>
+          <Span>S</Span>ou mineira, intensa e adoro viajar! Mas o que faz a diferença no meu dia a dia, é estar em contato com a natureza... contemplar o nascer do sol, ou apenas apreciar suas maravilhas!
+          </p>
           <Span>E</Span>m uma dessas voltas que a vida dá, conheci o mundo da tecnologia e me apaixonei! Atualmente sou desenvolvedora Full Stack em formação pela Trybe. Concluído o módulo de Front-end, neste momento estou me aventurando nos desafios do Back-end, reforçando e aprimorando os conhecimentos adquiridos ao longo do curso. 
           </p>
           <p>
-          Trabalhei durante anos na área hospitalar, aprendendo a ter resiliência, senso de urgência e a trabalhar em equipe.
+          <Span>D</Span>urante minha trajetória como Nutricionista, aprendi a ter resiliência, foco em resultados, senso de urgência e a trabalhar em equipe.
           </p>
-          <p>
-          Como dizem por aí, hoje sou metade Dev!
-          </p>
-          <p>Sejam bem vindos!</p>
         </ContainerAbout>
       </AboutStyle>
       <Footer />
