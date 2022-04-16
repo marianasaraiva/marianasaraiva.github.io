@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.0a46d1ad.css",
-    "main.js": "/static/js/main.16192393.js",
+    "main.js": "/static/js/main.ba066b15.js",
+    "static/media/sonhandoEmCordas.png": "/static/media/sonhandoEmCordas.ddab569767918c6575ee.png",
     "static/media/portfolio.png": "/static/media/portfolio.0f12ba1f1122ccd0c31a.png",
     "static/media/folder.jpg": "/static/media/folder.5ccbb647d82f11be63c7.jpg",
     "static/media/oneForAll.png": "/static/media/oneForAll.d159f21ab2736db4cc16.png",
@@ -16,10 +17,10 @@
     "static/media/pixel.png": "/static/media/pixel.53132d4c8903e3afdd8c.png",
     "index.html": "/index.html",
     "main.0a46d1ad.css.map": "/static/css/main.0a46d1ad.css.map",
-    "main.16192393.js.map": "/static/js/main.16192393.js.map"
+    "main.ba066b15.js.map": "/static/js/main.ba066b15.js.map"
   },
   "entrypoints": [
     "static/css/main.0a46d1ad.css",
-    "static/js/main.16192393.js"
+    "static/js/main.ba066b15.js"
   ]
 }
