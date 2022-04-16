@@ -2,6 +2,7 @@ import Pixel from '../images/pixel.png';
 import Trybewarts from '../images/trybewarts.png';
 import ShoppingCart from '../images/shoppingCart.png';
 import SolarSistem from '../images/solarSistem.png';
+import SonhandoEmCordas from '../images/sonhandoEmCordas.png';
 import Trivia from '../images/trivia.png';
 import AppRecipe from '../images/appRecipe.png';
 import TrybeWallet from '../images/trybeWallet.png';
@@ -44,6 +45,13 @@ export const dataProjects = [
     collaborative: ['Airton Lopes', 'Bruno Faria', 'Renata Domingues'],
     tecnologies: ['react', 'contextapi', 'hooks', 'github'],
     url: "https://github.com/marianasaraiva/trybe-project-app-recipe",
+  },
+  {
+    name: 'Sonhando em Cordas',
+    image: SonhandoEmCordas,
+    collaborative: [],
+    tecnologies: ['react', 'css', 'github'],
+    url: "https://github.com/marianasaraiva/sonhando-em-cordas",
   },
   {
     name: 'Solar System',
