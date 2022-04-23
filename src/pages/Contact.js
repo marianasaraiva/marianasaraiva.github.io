@@ -12,6 +12,7 @@ import {
   ButtonSearch,
   LocationItemStyle,
   ContainerMidias,
+  Form,
   InputContact,
   TextAreaContact
 } from './styles.js';
@@ -24,6 +25,7 @@ init("4fmOJ1PUN_y6Tbl90");
 function Contact() {
   const [sendName, setSendName] = useState('');
   const [sendMessage, setSendMessage] = useState('');
+  const [sendEmail, setSendEmail] = useState('');
 
   (function () {
     emailjs.init("4fmOJ1PUN_y6Tbl90");
@@ -70,8 +72,7 @@ function Contact() {
           </ContainerMidias>
           <StyleP>Gostou? Vamos conversar... Envie sua mensagem!</StyleP>
 
-          <form
-            className="text-center w-10/12 m-2 flex flex-col items-center justify-evenly"
+          <Form
             action="malito:marianascm8@gmail.com"
             method="post"
             encType="multipart/form-data"
@@ -83,6 +84,14 @@ function Contact() {
               name="name"
               onChange={({ target }) => setSendName(target.value)}
               value={sendName}
+            />
+            <InputContact
+              type="text"
+              required
+              placeholder="E-mail"
+              name="email"
+              onChange={({ target }) => setSendEmail(target.value)}
+              value={sendEmail}
             />
             <TextAreaContact
               type="text"
@@ -96,15 +105,20 @@ function Contact() {
               <ButtonSearch
                 type="button"
                 onClick={() => {
-                  emailSendLibrary({ name: sendName, notes: sendMessage });
+                  emailSendLibrary({
+                    name: sendName,
+                    email: sendEmail,
+                    notes: sendMessage
+                  });
                   setSendName('');
                   setSendMessage('');
+                  setSendEmail('');
                 }}
               >
                 Enviar
               </ButtonSearch>
             </div>
-          </form>
+          </Form>
         </SectionStyle>
       </BackgroundImageStyle>
       <Footer />
