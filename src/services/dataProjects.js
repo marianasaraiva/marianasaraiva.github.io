@@ -18,7 +18,7 @@ export const dataProjects = [
     collaborative: ['Jonatas Passos', 'Nathália Miranda'],
     tecnologies: ['html', 'css', 'javascript', 'react', 'nodejs', 'github'],
     url: "https://github.com/marianasaraiva/trybe-project-trybewarts",
-    description: 'Aplicação Full Stack, reserevas de hotel',
+    description: 'Aplicação Full Stack, simulando a reservas de hotel, consumindo API a própria!',
   },
   {
     name: 'Sonhando em Cordas',
@@ -26,7 +26,7 @@ export const dataProjects = [
     collaborative: [],
     tecnologies: ['react', 'css', 'github'],
     url: "https://github.com/marianasaraiva/sonhando-em-cordas",
-    description: 'Jogo educacional em React para violão direcionado à crianças',
+    description: 'Jogo educacional em React para violão direcionado à crianças!',
   },
   {
     name: 'Trybewarts',
@@ -34,7 +34,7 @@ export const dataProjects = [
     collaborative: ['Juliana Miranda'],
     tecnologies: ['html', 'css', 'javascript', 'github'],
     url: "https://github.com/marianasaraiva/trybe-project-trybewarts",
-    description: 'Página para desenvolver habilidades de posicionamento de elementos',
+    description: 'Página para desenvolver habilidades de posicionamento de elementos.',
   },
   {
     name: 'TrybeWallet',
@@ -42,7 +42,7 @@ export const dataProjects = [
     collaborative: [],
     tecnologies: ['react', 'redux', 'css', 'github'],
     url: "https://github.com/marianasaraiva/trybe-project-trybewallet",
-    description: 'Aplicação react, simulando uma carteira de conversão de moedas',
+    description: 'Aplicação React, simulando uma carteira de conversão de moedas.',
   },
   {
     name: 'Portfolio',
@@ -50,7 +50,7 @@ export const dataProjects = [
     collaborative: [],
     tecnologies: ['react', 'contextapi', 'hooks', 'tailwind', 'styledcomponent', 'github'],
     url: "https://github.com/marianasaraiva/tech-hotel",
-    description: 'Aplicação react, utilizando styled components e tailwind CSS juntos!',
+    description: 'Aplicação React, utilizando styled components e tailwind CSS juntos!',
   },
   {
     name: 'Trivia',
@@ -66,7 +66,7 @@ export const dataProjects = [
     collaborative: ['Airton Lopes', 'Bruno Faria', 'Renata Domingues'],
     tecnologies: ['react', 'contextapi', 'hooks', 'github'],
     url: "https://github.com/marianasaraiva/trybe-project-app-recipe",
-    description: "O Grandman's Flavor, é uma aplicação completa aos amantes da culinária!",
+    description: "Aplicação mobile em Front-end para os amantes da culinária!",
   },
   {
     name: 'Shopping Cart',
@@ -90,7 +90,7 @@ export const dataProjects = [
     collaborative: [],
     tecnologies: ['html', 'css', 'javascript', 'github'],
     url: "https://github.com/marianasaraiva/trybe-project-pixels-art",
-    description: 'Jogo de colorir em pixels.',
+    description: 'Jogo de colorir em pixels. Primeiros passos no desenvolvimento web.',
   },
   // {
   //   name: 'One For All',

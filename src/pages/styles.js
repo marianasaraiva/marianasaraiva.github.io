@@ -186,7 +186,7 @@ export const FlexCenter = tw.div`
   items-center
   justify-evenly
   bg-yellow-50
-  md:w-2/3
+  md:w-4/5
 `;
 
 export const CardImageProject = tw.button`
@@ -196,7 +196,7 @@ export const CardImageProject = tw.button`
   justify-evenly
   box-border
   bg-orange-50
-  h-72
+  h-80
   w-96  
   shadow-xl
   my-4
@@ -282,7 +282,7 @@ export const InputContact = tw.input`
   justify-center
   border-2
   text-center
-  m-2
+  mb-4
   w-11/12
   rouded-lg
 `;
@@ -297,7 +297,7 @@ export const TextAreaContact = tw.textarea`
 
 export const Form = tw.form`
   text-center
-  w-10/12
+  w-8/12
   m-2
   flex
   flex-col
