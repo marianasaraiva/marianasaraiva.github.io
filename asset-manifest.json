@@ -1,13 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.0a46d1ad.css",
-    "main.js": "/static/js/main.ba066b15.js",
+    "main.css": "/static/css/main.584b8746.css",
+    "main.js": "/static/js/main.95488bad.js",
+    "static/media/techHotel.png": "/static/media/techHotel.9e12e8af76d7159b7bfa.png",
     "static/media/sonhandoEmCordas.png": "/static/media/sonhandoEmCordas.ddab569767918c6575ee.png",
     "static/media/portfolio.png": "/static/media/portfolio.0f12ba1f1122ccd0c31a.png",
     "static/media/folder.jpg": "/static/media/folder.5ccbb647d82f11be63c7.jpg",
-    "static/media/oneForAll.png": "/static/media/oneForAll.d159f21ab2736db4cc16.png",
     "static/media/appRecipe.png": "/static/media/appRecipe.11a80b0444f1aea38abf.png",
-    "static/media/solarSistem.png": "/static/media/solarSistem.f7ac3711ac1a0b552af9.png",
     "static/media/talkerManager.png": "/static/media/talkerManager.2ddd43d5a195e4c105e0.png",
     "static/media/shoppingCart.png": "/static/media/shoppingCart.e874dc85c6a23932a5d1.png",
     "static/media/trybewarts.png": "/static/media/trybewarts.6ca499758316f840a773.png",
@@ -16,11 +15,11 @@
     "static/media/trybeWallet.png": "/static/media/trybeWallet.6e6560445471278fd678.png",
     "static/media/pixel.png": "/static/media/pixel.53132d4c8903e3afdd8c.png",
     "index.html": "/index.html",
-    "main.0a46d1ad.css.map": "/static/css/main.0a46d1ad.css.map",
-    "main.ba066b15.js.map": "/static/js/main.ba066b15.js.map"
+    "main.584b8746.css.map": "/static/css/main.584b8746.css.map",
+    "main.95488bad.js.map": "/static/js/main.95488bad.js.map"
   },
   "entrypoints": [
-    "static/css/main.0a46d1ad.css",
-    "static/js/main.ba066b15.js"
+    "static/css/main.584b8746.css",
+    "static/js/main.95488bad.js"
   ]
 }
