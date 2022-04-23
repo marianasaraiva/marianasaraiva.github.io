@@ -28,6 +28,21 @@ export const BackgroundImageStyle = tw.section`
   leading-10
 `;
 
+export const BackgroundImageProject = tw.section`
+  flex
+  items-center
+  justify-center
+  flex-col
+  font-semibold
+  bg-folder
+  bg-top
+  bg-cover
+  w-full
+  py-2
+  lg:py-8
+  leading-10
+`;
+
 export const TitleHome = tw.h1`
   text-2xl
   md:text-3xl
@@ -97,18 +112,20 @@ export const TechContainer = tw.ul`
   flex-col
   items-center
   justify-evelyn
-  bg-yellow-50
-  opacity-75
   w-full
-  py-6
+  opacity-75
+  w-5/6
+  py-4
 `;
 
 export const Title = tw.h2`
-  mb-5
-  text-2xl
+  pb-5
+  text-lg
+  lg:text-2xl
   text-orange-900
   font-semibold
   text-center
+  w-full
 `;
 
 export const ProjectP = tw.p`
@@ -116,7 +133,6 @@ export const ProjectP = tw.p`
   mb-5
   px-5
   text-center
-  font-normal
   leading-normal
 `;
 
@@ -144,14 +160,14 @@ export const ProjectStyle = tw.section`
   opacity-80
 `;
 
-export const ContainerInput = tw.div`
-  flex
-  items-center
-  flex-col
-  md:flex-row
-  w-2/4
-  justify-evenly
-`;
+// export const ContainerInput = tw.div`
+//   flex
+//   items-center
+//   flex-col
+//   md:flex-row
+//   w-2/4
+//   justify-evenly
+// `;
 
 export const InputSearch = tw.input`
   border
@@ -161,7 +177,9 @@ export const InputSearch = tw.input`
   lg:px-16
   text-sm
   lg:text-lg
-  rounded-4xl 
+  w-2/4
+  mb-2
+  lg:mb-6
 `;
 
 export const ButtonSearch = tw.button`
@@ -185,28 +203,27 @@ export const FlexCenter = tw.div`
   flex-wrap
   items-center
   justify-evenly
-  bg-yellow-50
   md:w-4/5
 `;
 
-export const CardImageProject = tw.button`
+export const CardImageProject = tw.div`
   flex
   flex-col
   items-center
   justify-evenly
   box-border
-  bg-orange-50
-  h-80
+  bg-yellow-50
+  h-96
   w-96  
   shadow-xl
   my-4
-  grayscale
-  hover:grayscale-[10%]
 `;
 
 export const ImageProjects = tw.img`
   w-full
   border
+  grayscale
+  hover:grayscale-[10%]
 `;
 
 // sm:invisible
@@ -233,14 +250,6 @@ export const SectionStyle = tw.div`
   md:py-10
   opacity-75
 `;
-
-// export const ContainerContacts = tw.div`
-//   flex
-//   items-center
-//   justify-evenly
-//   w-full
-//   border-4
-// `;
 
 export const StyleP = tw.p`
   text-md
@@ -302,5 +311,26 @@ export const Form = tw.form`
   flex
   flex-col
   items-center
-  justify-evenly"
+  justify-evenly
+`;
+
+export const BlankLink = tw.div`
+  flex
+  flex-row
+  items-center
+  justify-evenly
+`;
+
+export const LinkButton = tw.div`
+  w-full
+  text-yellow-50
+  bg-orange-700
+  rounded-4xl
+  font-bold
+  m-2
+  hover:bg-stone-500 duration-500
+  sm:text-sm
+  w-20
+  lg:w-32
+  py-2
 `;

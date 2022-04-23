@@ -18,6 +18,7 @@ export const dataProjects = [
     collaborative: ['Jonatas Passos', 'Nathália Miranda'],
     tecnologies: ['html', 'css', 'javascript', 'react', 'nodejs', 'github'],
     url: "https://github.com/marianasaraiva/trybe-project-trybewarts",
+    deploy: '',
     description: 'Aplicação Full Stack, simulando a reservas de hotel, consumindo API a própria!',
   },
   {
@@ -26,6 +27,7 @@ export const dataProjects = [
     collaborative: [],
     tecnologies: ['react', 'css', 'github'],
     url: "https://github.com/marianasaraiva/sonhando-em-cordas",
+    deploy: 'https://sonhando-em-cordas.vercel.app/',
     description: 'Jogo educacional em React para violão direcionado à crianças!',
   },
   {
@@ -34,6 +36,7 @@ export const dataProjects = [
     collaborative: ['Juliana Miranda'],
     tecnologies: ['html', 'css', 'javascript', 'github'],
     url: "https://github.com/marianasaraiva/trybe-project-trybewarts",
+    deploy: 'https://marianasaraiva.github.io/trybe-project-trybewarts/',
     description: 'Página para desenvolver habilidades de posicionamento de elementos.',
   },
   {
@@ -42,6 +45,7 @@ export const dataProjects = [
     collaborative: [],
     tecnologies: ['react', 'redux', 'css', 'github'],
     url: "https://github.com/marianasaraiva/trybe-project-trybewallet",
+    deploy: 'https://trybe-project-trybewallet.vercel.app/',
     description: 'Aplicação React, simulando uma carteira de conversão de moedas.',
   },
   {
@@ -50,6 +54,7 @@ export const dataProjects = [
     collaborative: [],
     tecnologies: ['react', 'contextapi', 'hooks', 'tailwind', 'styledcomponent', 'github'],
     url: "https://github.com/marianasaraiva/tech-hotel",
+    deploy: 'https://marianasaraiva.github.io/',
     description: 'Aplicação React, utilizando styled components e tailwind CSS juntos!',
   },
   {
@@ -58,6 +63,7 @@ export const dataProjects = [
     collaborative: ['Alissandra Lima', 'Ruan Cunha', 'Samuel Gonçalves'],
     tecnologies: ['react', 'redux', 'css', 'github'],
     url: "https://github.com/marianasaraiva/trybe-project-trivia",
+    deploy: '',
     description: 'Jogo de perguntas e respostas, consumindo API externa.',
   },
   {
@@ -66,6 +72,7 @@ export const dataProjects = [
     collaborative: ['Airton Lopes', 'Bruno Faria', 'Renata Domingues'],
     tecnologies: ['react', 'contextapi', 'hooks', 'github'],
     url: "https://github.com/marianasaraiva/trybe-project-app-recipe",
+    deploy: '',
     description: "Aplicação mobile em Front-end para os amantes da culinária!",
   },
   {
@@ -74,6 +81,7 @@ export const dataProjects = [
     collaborative: [],
     tecnologies: ['html', 'css', 'javascript', 'jest', 'github'],
     url: "https://github.com/marianasaraiva/trybe-project-shopping-cart",
+    deploy: 'https://marianasaraiva.github.io/trybe-project-shopping-cart/',
     description: 'Aplicação consumindo API do mercado livre, e implementação de testes unitários.',
   },
   {
@@ -82,6 +90,7 @@ export const dataProjects = [
     collaborative: [],
     tecnologies: ['nodejs', 'css', 'javascript', 'github'],
     url: "https://github.com/marianasaraiva/trybe-project-talker-manager",
+    deploy: '',
     description: 'Aplicação Back-end, realizando um CRUD e estruturando através de ORM.',
   },
   {
@@ -90,6 +99,7 @@ export const dataProjects = [
     collaborative: [],
     tecnologies: ['html', 'css', 'javascript', 'github'],
     url: "https://github.com/marianasaraiva/trybe-project-pixels-art",
+    deploy: 'https://marianasaraiva.github.io/trybe-project-pixels-art/',
     description: 'Jogo de colorir em pixels. Primeiros passos no desenvolvimento web.',
   },
   // {
@@ -98,6 +108,7 @@ export const dataProjects = [
   //   collaborative: [],
   //   tecnologies: ['mysql', 'javascript', 'github'],
   //   url: "https://github.com/marianasaraiva/trybe-project-one-for-all ",
+  //   deploy: '',
   //   description: 'Aplicação Back-end, realizado modelagem de dados e aplicação de querys!',
   // },
   // {
@@ -105,6 +116,7 @@ export const dataProjects = [
   //   image: SolarSistem,
   //   collaborative: [],
   //   tecnologies: ['react', 'css', 'github'],
+  //   deploy: 'https://trybe-project-solar-system.vercel.app/',
   //   url: "https://github.com/marianasaraiva/trybe-project-solar-system",
   // },
 ];

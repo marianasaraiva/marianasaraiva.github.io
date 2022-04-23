@@ -39,4 +39,5 @@ export const FooterStyled = tw.footer`
   lg:text-l
   text-orange-900
   py-4
+  font-bold
 `;

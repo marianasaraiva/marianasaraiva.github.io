@@ -4,7 +4,8 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import { dataProjects, dataTechnologies } from '../services/dataProjects.js';
 import { 
-  BackgroundImageStyle,
+  // BackgroundImageStyle,
+  BackgroundImageProject,
   TechContainer,
   Title,
   ProjectP,
@@ -15,6 +16,8 @@ import {
   ButtonSearch,
   FlexCenter,
   CardImageProject,
+  BlankLink,
+  LinkButton,
   ImageProjects } from './styles.js';
 
 function Projects() {
@@ -24,11 +27,75 @@ function Projects() {
   return (
     <div>
       <Header />
-      <BackgroundImageStyle>
+      <BackgroundImageProject>
+        <Title id="techCard">Projetos</Title>
+        <ProjectP>Lista dos projetos concluídos! Filtre pelo nome ou pela tecnologia desejada.</ProjectP>
+          <InputSearch
+            placeholder="Buscar por nome ou tecnologia"
+            type="text"
+            value={inputState}
+            onChange={({ target }) => setInputState(target.value)}
+          />
+          <ButtonSearch
+            type="button"
+            onClick={() => { setSearch(inputState); setInputState('') }}
+          >
+            Pesquisar
+          </ButtonSearch>
+      </BackgroundImageProject>
+      <ProjectStyle>
+        {
+          search.length === 0 ?
+            <FlexCenter>
+              {
+                dataProjects.map((project, i) => (
+                  <CardImageProject>
+                    <ImageProjects src={project.image} alt={project.name} />
+                    {/* <ProjectP>{project.name}</ProjectP> */}
+                    <ProjectP>{project.description}</ProjectP>
+                    <BlankLink>
+                      <LinkButton>
+                        <Link key={i} to={{ pathname: `${project.url}` }} target="_blank">GitHub</Link>
+                      </LinkButton>
+                      { project.deploy !== '' &&
+                        <LinkButton>
+                          <Link key={i} to={{ pathname: `${project.deploy}` }} target="_blank">Deploy</Link>
+                        </LinkButton>
+                      }
+                    </BlankLink>
+                  </CardImageProject>
+                ))
+              }
+            </FlexCenter>
+            :
+            <FlexCenter>
+              {
+                dataProjects.filter((project) => project.name.toLowerCase().includes(search.toLowerCase()) || project.tecnologies.includes(search.toLowerCase()))
+                  .map((proj, i) => (
+                    <CardImageProject>
+                      <ImageProjects src={proj.image} alt={proj.name} />
+                      {/* <ProjectP>{proj.name}</ProjectP> */}
+                      <ProjectP>{proj.description}</ProjectP>
+                      <BlankLink>
+                        <LinkButton>
+                          <Link key={i} to={{ pathname: `${proj.url}` }} target="_blank">GitHub</Link> 
+                        </LinkButton>
+                        { proj.deploy !== '' &&
+                          <LinkButton>
+                            <Link key={i} to={{ pathname: `${proj.deploy}` }} target="_blank">Deploy</Link>
+                          </LinkButton>
+                        }
+                    </BlankLink>
+                    </CardImageProject>
+                  ))}
+            </FlexCenter>
+        }
+      </ProjectStyle>
+      <BackgroundImageProject>
         <TechContainer>
           <Title>Tecnologias e Ferramentas</Title>
           <ProjectP>
-            Lista das principais tecnologias desenvolvidas. Ao selecionar uma tecnologia, ocorre o filtro dos projetos que foram desenvolvidos utilizando ela.
+            Lista das principais tecnologias desenvolvidas. Ao clicar em uma tecnologia, ocorre o filtro dos projetos que foram desenvolvidos utilizando ela.
           </ProjectP>
           <FlexCenter>
             {dataTechnologies.map((tech, i) => (
@@ -50,65 +117,7 @@ function Projects() {
             ))}
           </FlexCenter>
         </TechContainer>
-      </BackgroundImageStyle>
-
-      <ProjectStyle>
-        <Title id="techCard">
-          Projetos</Title>
-        <ProjectP>
-          Projetos concluídos usando as tecnologias aprendidas durante o curso de Desenvolvimento Web.
-        </ProjectP>
-        <ContainerInput>
-          <InputSearch
-            placeholder="Buscar por nome ou tecnologia"
-            type="text"
-            value={inputState}
-            onChange={({ target }) => setInputState(target.value)}
-          ></InputSearch>
-          <ButtonSearch
-            type="button"
-            onClick={() => { setSearch(inputState); setInputState('') }}
-          >
-            Pesquisar
-          </ButtonSearch>
-        </ContainerInput>
-
-        {
-          search.length === 0 ?
-            <FlexCenter>
-              {
-                dataProjects.map((project, i) => (
-                  <Link key={i} to={{ pathname: `${project.url}` }} target="_blank">
-                    <CardImageProject
-                      type="button"
-                    >
-                      <ImageProjects src={project.image} alt={project.name} />
-                      <ProjectP>{project.name}</ProjectP>
-                      <ProjectP>{project.description}</ProjectP>
-                    </CardImageProject>
-                  </Link>
-                ))
-              }
-            </FlexCenter>
-            :
-            <FlexCenter>
-              {
-                dataProjects.filter((project) => project.name.toLowerCase().includes(search.toLowerCase()) || project.tecnologies.includes(search.toLowerCase()))
-                  .map((proj, i) => (
-                    <Link key={i} to={{ pathname: `${proj.url}` }} target="_blank">
-                      <CardImageProject
-                        type="button"
-                      >
-                        <ImageProjects src={proj.image} alt={proj.name} />
-                        <ProjectP>{proj.name}</ProjectP>
-                        <ProjectP>{proj.description}</ProjectP>
-                      </CardImageProject>
-                    </Link>
-                  ))}
-            </FlexCenter>
-        }
-      </ProjectStyle>
-
+      </BackgroundImageProject> 
       <Footer />
     </div>
   );
