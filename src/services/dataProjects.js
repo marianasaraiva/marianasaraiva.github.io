@@ -1,50 +1,24 @@
 import Pixel from '../images/pixel.png';
 import Trybewarts from '../images/trybewarts.png';
 import ShoppingCart from '../images/shoppingCart.png';
-import SolarSistem from '../images/solarSistem.png';
 import SonhandoEmCordas from '../images/sonhandoEmCordas.png';
 import Trivia from '../images/trivia.png';
 import AppRecipe from '../images/appRecipe.png';
 import TrybeWallet from '../images/trybeWallet.png';
 import TalkerManager from '../images/talkerManager.png';
-import OneForAll from '../images/oneForAll.png';
 import Portfolio from '../images/portfolio.png';
+import TechHotel from '../images/techHotel.png';
+// import SolarSistem from '../images/solarSistem.png';
+// import OneForAll from '../images/oneForAll.png';
 
 export const dataProjects = [
   {
-    name: 'Portfolio',
-    image: Portfolio,
-    collaborative: [],
-    tecnologies: ['react', 'contextapi', 'hooks', 'tailwind', 'styledcomponent', 'github'],
-    url: "https://github.com/marianasaraiva/marianasaraiva.github.io",
-  },
-  {
-    name: 'Trybewarts',
-    image: Trybewarts,
-    collaborative: ['Juliana Miranda'],
-    tecnologies: ['html', 'css', 'javascript', 'github'],
+    name: 'Tech Hotel',
+    image: TechHotel,
+    collaborative: ['Jonatas Passos', 'Nathália Miranda'],
+    tecnologies: ['html', 'css', 'javascript', 'react', 'nodejs', 'github'],
     url: "https://github.com/marianasaraiva/trybe-project-trybewarts",
-  },
-  {
-    name: 'TrybeWallet',
-    image: TrybeWallet,
-    collaborative: [],
-    tecnologies: ['react', 'redux', 'css', 'github'],
-    url: "https://github.com/marianasaraiva/trybe-project-trybewallet",
-  },
-  {
-    name: 'Trivia',
-    image: Trivia,
-    collaborative: ['Alissandra Lima', 'Ruan Cunha', 'Samuel Gonçalves'],
-    tecnologies: ['react', 'redux', 'css', 'github'],
-    url: "https://github.com/marianasaraiva/trybe-project-trivia",
-  },
-  {
-    name: 'App Recipe',
-    image: AppRecipe,
-    collaborative: ['Airton Lopes', 'Bruno Faria', 'Renata Domingues'],
-    tecnologies: ['react', 'contextapi', 'hooks', 'github'],
-    url: "https://github.com/marianasaraiva/trybe-project-app-recipe",
+    description: 'Aplicação Full Stack, reserevas de hotel',
   },
   {
     name: 'Sonhando em Cordas',
@@ -52,20 +26,47 @@ export const dataProjects = [
     collaborative: [],
     tecnologies: ['react', 'css', 'github'],
     url: "https://github.com/marianasaraiva/sonhando-em-cordas",
+    description: 'Jogo educacional em React para violão direcionado à crianças',
   },
   {
-    name: 'Solar System',
-    image: SolarSistem,
-    collaborative: [],
-    tecnologies: ['react', 'css', 'github'],
-    url: "https://github.com/marianasaraiva/trybe-project-solar-system",
+    name: 'Trybewarts',
+    image: Trybewarts,
+    collaborative: ['Juliana Miranda'],
+    tecnologies: ['html', 'css', 'javascript', 'github'],
+    url: "https://github.com/marianasaraiva/trybe-project-trybewarts",
+    description: 'Página para desenvolver habilidades de posicionamento de elementos',
   },
   {
-    name: 'One For All',
-    image: OneForAll,
+    name: 'TrybeWallet',
+    image: TrybeWallet,
     collaborative: [],
-    tecnologies: ['mysql', 'javascript', 'github'],
-    url: "https://github.com/marianasaraiva/trybe-project-one-for-all ",
+    tecnologies: ['react', 'redux', 'css', 'github'],
+    url: "https://github.com/marianasaraiva/trybe-project-trybewallet",
+    description: 'Aplicação react, simulando uma carteira de conversão de moedas',
+  },
+  {
+    name: 'Portfolio',
+    image: Portfolio,
+    collaborative: [],
+    tecnologies: ['react', 'contextapi', 'hooks', 'tailwind', 'styledcomponent', 'github'],
+    url: "https://github.com/marianasaraiva/tech-hotel",
+    description: 'Aplicação react, utilizando styled components e tailwind CSS juntos!',
+  },
+  {
+    name: 'Trivia',
+    image: Trivia,
+    collaborative: ['Alissandra Lima', 'Ruan Cunha', 'Samuel Gonçalves'],
+    tecnologies: ['react', 'redux', 'css', 'github'],
+    url: "https://github.com/marianasaraiva/trybe-project-trivia",
+    description: 'Jogo de perguntas e respostas, consumindo API externa.',
+  },
+  {
+    name: "Gramadma's Flavor",
+    image: AppRecipe,
+    collaborative: ['Airton Lopes', 'Bruno Faria', 'Renata Domingues'],
+    tecnologies: ['react', 'contextapi', 'hooks', 'github'],
+    url: "https://github.com/marianasaraiva/trybe-project-app-recipe",
+    description: "O Grandman's Flavor, é uma aplicação completa aos amantes da culinária!",
   },
   {
     name: 'Shopping Cart',
@@ -73,6 +74,7 @@ export const dataProjects = [
     collaborative: [],
     tecnologies: ['html', 'css', 'javascript', 'jest', 'github'],
     url: "https://github.com/marianasaraiva/trybe-project-shopping-cart",
+    description: 'Aplicação consumindo API do mercado livre, e implementação de testes unitários.',
   },
   {
     name: 'Talker Manager',
@@ -80,6 +82,7 @@ export const dataProjects = [
     collaborative: [],
     tecnologies: ['nodejs', 'css', 'javascript', 'github'],
     url: "https://github.com/marianasaraiva/trybe-project-talker-manager",
+    description: 'Aplicação Back-end, realizando um CRUD e estruturando através de ORM.',
   },
   {
     name: 'Pixel Arts',
@@ -87,7 +90,23 @@ export const dataProjects = [
     collaborative: [],
     tecnologies: ['html', 'css', 'javascript', 'github'],
     url: "https://github.com/marianasaraiva/trybe-project-pixels-art",
+    description: 'Jogo de colorir em pixels.',
   },
+  // {
+  //   name: 'One For All',
+  //   image: OneForAll,
+  //   collaborative: [],
+  //   tecnologies: ['mysql', 'javascript', 'github'],
+  //   url: "https://github.com/marianasaraiva/trybe-project-one-for-all ",
+  //   description: 'Aplicação Back-end, realizado modelagem de dados e aplicação de querys!',
+  // },
+  // {
+  //   name: 'Solar System',
+  //   image: SolarSistem,
+  //   collaborative: [],
+  //   tecnologies: ['react', 'css', 'github'],
+  //   url: "https://github.com/marianasaraiva/trybe-project-solar-system",
+  // },
 ];
 export const dataTechnologies = [
   {
