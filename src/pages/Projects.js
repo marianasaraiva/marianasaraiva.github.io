@@ -84,6 +84,7 @@ function Projects() {
                     >
                       <ImageProjects src={project.image} alt={project.name} />
                       <ProjectP>{project.name}</ProjectP>
+                      <ProjectP>{project.description}</ProjectP>
                     </CardImageProject>
                   </Link>
                 ))
@@ -100,6 +101,7 @@ function Projects() {
                       >
                         <ImageProjects src={proj.image} alt={proj.name} />
                         <ProjectP>{proj.name}</ProjectP>
+                        <ProjectP>{proj.description}</ProjectP>
                       </CardImageProject>
                     </Link>
                   ))}

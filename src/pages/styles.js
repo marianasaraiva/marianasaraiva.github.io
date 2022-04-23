@@ -93,6 +93,10 @@ export const Span = tw.span`
 `;
 
 export const TechContainer = tw.ul`
+  flex
+  flex-col
+  items-center
+  justify-evelyn
   bg-yellow-50
   opacity-75
   w-full
@@ -182,6 +186,7 @@ export const FlexCenter = tw.div`
   items-center
   justify-evenly
   bg-yellow-50
+  md:w-2/3
 `;
 
 export const CardImageProject = tw.button`
@@ -288,4 +293,14 @@ export const TextAreaContact = tw.textarea`
   mb-4
   w-11/12
   rouded-lg
+`;
+
+export const Form = tw.form`
+  text-center
+  w-10/12
+  m-2
+  flex
+  flex-col
+  items-center
+  justify-evenly"
 `;
