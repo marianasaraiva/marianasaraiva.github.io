@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.72d6c241.css",
-    "main.js": "/static/js/main.e100bf5a.js",
+    "main.css": "/static/css/main.3aa7f7f3.css",
+    "main.js": "/static/js/main.19ea831f.js",
     "static/media/techHotel.png": "/static/media/techHotel.9e12e8af76d7159b7bfa.png",
     "static/media/sonhandoEmCordas.png": "/static/media/sonhandoEmCordas.ddab569767918c6575ee.png",
     "static/media/portfolio.png": "/static/media/portfolio.0f12ba1f1122ccd0c31a.png",
@@ -15,11 +15,11 @@
     "static/media/trybeWallet.png": "/static/media/trybeWallet.6e6560445471278fd678.png",
     "static/media/pixel.png": "/static/media/pixel.53132d4c8903e3afdd8c.png",
     "index.html": "/index.html",
-    "main.72d6c241.css.map": "/static/css/main.72d6c241.css.map",
-    "main.e100bf5a.js.map": "/static/js/main.e100bf5a.js.map"
+    "main.3aa7f7f3.css.map": "/static/css/main.3aa7f7f3.css.map",
+    "main.19ea831f.js.map": "/static/js/main.19ea831f.js.map"
   },
   "entrypoints": [
-    "static/css/main.72d6c241.css",
-    "static/js/main.e100bf5a.js"
+    "static/css/main.3aa7f7f3.css",
+    "static/js/main.19ea831f.js"
   ]
 }
