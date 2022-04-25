@@ -41,6 +41,7 @@ export const BackgroundImageProject = tw.section`
   py-2
   lg:py-8
   leading-10
+  opacity-80
 `;
 
 export const TitleHome = tw.h1`
@@ -126,6 +127,9 @@ export const Title = tw.h2`
   font-semibold
   text-center
   w-full
+  font-bold
+  opacity-60
+  text-black
 `;
 
 export const ProjectP = tw.p`
@@ -133,6 +137,7 @@ export const ProjectP = tw.p`
   mb-5
   px-5
   text-center
+  opacity-60
   leading-normal
 `;
 
@@ -180,6 +185,8 @@ export const InputSearch = tw.input`
   w-2/4
   mb-2
   lg:mb-6
+  border-2
+  rouded-lg
 `;
 
 export const ButtonSearch = tw.button`
